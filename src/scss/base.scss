@@ -1,0 +1,51 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-width: 100vw;
+    min-height: 100vh;
+    margin: 0;
+}
+main {
+    flex-grow: 1;
+}
+.section {
+    width: 100vw;
+    padding: 20px 0;
+}
+
+@media (min-width: 1200px) {
+    .section {
+        padding: 40px 0;
+    }
+}
+.container {
+    min-width: 320px;
+    max-width: 375px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+@media only screen and (min-width: 1200px) {
+    .container {
+        max-width: 1200px;
+        padding: 0 40px;
+    }
+}
+.btn {
+    font-family: inherit;
+    border: none;
+}
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+.hide {
+    display: none;
+}
