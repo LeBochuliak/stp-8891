@@ -7,11 +7,31 @@
     background-size: auto;
     background-repeat: no-repeat;
     background-position: 50% 50%, 50% -1%, 67% 100%, 45% 99.5%, 50% 50%;
+
+    @include media(desktop) {
+        padding-bottom: 220px;
+        padding-top: 54px;
+        background-image: url(/img/benefits/today-is-desktop.png),
+            url(/img/benefits/tire-traces-right-desktop.png),
+            url(/img/benefits/car-desktop.png),
+            url(/img/benefits/tire-traces-desktop.png),
+            url(/img/benefits/texture-desktop.png);
+        background-position: 50% 44%, 78% -14%, 86% 102%, 12% 98%, 50% 50%;
+    }
+}
+.section-title-benefits {
+    margin-bottom: 90px;
 }
 .benefits-list {
     display: flex;
     flex-direction: column;
     align-items: center;
+    @include media(desktop) {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
 }
 .benefits-list-item {
     padding: 16px;
@@ -21,16 +41,59 @@
     width: 288px;
     background: #ffeb9b;
     margin-bottom: 16px;
+    @include media(desktop) {
+        padding: 32px;
+        width: 352px;
+        margin-bottom: 60px;
+    }
+}
+
+.benefits-list-title {
+    @include media(desktop) {
+        font-size: 24px;
+    }
 }
 .benefits-list-text {
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     line-height: 1.4;
     margin-top: 4px;
+    @include media(desktop) {
+        font-size: 20px;
+    }
+}
+.benefits-list-item:nth-child(1) {
+    @include media(desktop) {
+        order: 1;
+        align-items: center;
+    }
+}
+.benefits-list-item:nth-child(2) {
+    @include media(desktop) {
+        order: 4;
+    }
 }
 .benefits-list-item:nth-child(3) {
     margin-bottom: 133px;
+    @include media(desktop) {
+        order: 2;
+        margin-top: -50px;
+    }
+}
+.benefits-list-item:nth-child(4) {
+    @include media(desktop) {
+        order: 5;
+        margin-top: 100px;
+    }
+}
+.benefits-list-item:nth-child(5) {
+    @include media(desktop) {
+        order: 3;
+    }
 }
 .benefits-list-item:last-child {
     margin-bottom: 0;
+    @include media(desktop) {
+        order: 6;
+    }
 }

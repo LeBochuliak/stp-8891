@@ -11,10 +11,7 @@ main {
 .section {
     width: 100vw;
     padding: 20px 0;
-}
-
-@media (min-width: 1200px) {
-    .section {
+    @include media(desktop) {
         padding: 40px 0;
     }
 }
@@ -22,13 +19,12 @@ main {
     width: 320px;
     margin: 0 auto;
     padding: 0 16px;
-}
-@media only screen and (min-width: 1200px) {
-    .container {
-        max-width: 1200px;
+    @include media(desktop) {
+        width: 1200px;
         padding: 0 40px;
     }
 }
+
 .btn {
     font-family: inherit;
     border: none;
@@ -57,6 +53,9 @@ main {
     color: #343333;
     display: inline-block;
     margin-bottom: 26px;
+    @include media(desktop) {
+        font-size: 60px;
+    }
 }
 .section-title::before {
     content: '';
@@ -69,4 +68,11 @@ main {
     vertical-align: middle;
     margin-right: -52px;
     margin-top: -5px;
+    @include media(desktop) {
+        background-image: url(/img/title-decor-desktop.png);
+        width: 170px;
+        height: 164px;
+        margin-right: -116px;
+        margin-top: -12px;
+    }
 }
