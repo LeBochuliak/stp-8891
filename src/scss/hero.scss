@@ -2,14 +2,14 @@
     margin: 0 auto;
     background-image: url(/img/hero/ellipse.png), url(/img/hero/background.png);
     background-repeat: no-repeat;
-    background-position: -6% 140%, 50% 50%;
+    background-position: -6% 140%, 2% 99%;
     background-size: 216px, auto;
     padding: 54px 20px 48px;
     position: relative;
     @include media(desktop) {
         background-image: url(/img/hero/ellipse-desktop.png),
             url(/img/hero/background-desktop.png);
-        background-position: 0% 40%, 50% 50%;
+        background-position: 0% 40%, 50% 100%;
         background-size: 565px 570px, auto;
         padding: 266px 112px 288px;
     }
@@ -65,12 +65,13 @@
 }
 .hero-button {
     position: relative;
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding: 9px;
     width: 128px;
     height: 32px;
     border-radius: 8px;
-    border: none;
     font-family: 'Open Sans', sans-serif;
     font-weight: 600;
     font-size: 12px;

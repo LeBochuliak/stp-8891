@@ -1,6 +1,6 @@
 .benefits {
     padding-bottom: 138px;
-    padding-top: 54px;
+    padding-top: 56px;
     background-image: url(/img/benefits/today-is.png),
         url(/img/benefits/tire-traces-right.png), url(/img/benefits/car.png),
         url(/img/benefits/tire-traces.png), url(/img/benefits/texture.png);
@@ -10,7 +10,7 @@
 
     @include media(desktop) {
         padding-bottom: 220px;
-        padding-top: 54px;
+        padding-top: 94px;
         background-image: url(/img/benefits/today-is-desktop.png),
             url(/img/benefits/tire-traces-right-desktop.png),
             url(/img/benefits/car-desktop.png),
