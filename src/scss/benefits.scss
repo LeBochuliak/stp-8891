@@ -1,0 +1,36 @@
+.benefits {
+    padding-bottom: 138px;
+    padding-top: 54px;
+    background-image: url(/img/benefits/today-is.png),
+        url(/img/benefits/tire-traces-right.png), url(/img/benefits/car.png),
+        url(/img/benefits/tire-traces.png), url(/img/benefits/texture.png);
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: 50% 50%, 50% -1%, 67% 100%, 45% 99.5%, 50% 50%;
+}
+.benefits-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.benefits-list-item {
+    padding: 16px;
+    border: 1px solid #393939;
+    border-radius: 16px;
+    padding: 16px;
+    width: 288px;
+    background: #ffeb9b;
+    margin-bottom: 16px;
+}
+.benefits-list-text {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1.4;
+    margin-top: 4px;
+}
+.benefits-list-item:nth-child(3) {
+    margin-bottom: 133px;
+}
+.benefits-list-item:last-child {
+    margin-bottom: 0;
+}
