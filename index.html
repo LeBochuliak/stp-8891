@@ -25,36 +25,98 @@
         <title>Vanilla App Template</title>
         
       <script type="module" crossorigin src="/stp-8891/commonHelpers.js"></script>
-      <link rel="stylesheet" href="/stp-8891/assets/index-a93e85e2.css">
+      <link rel="stylesheet" href="/stp-8891/assets/index-e1b676bc.css">
     </head>
     <body>
-        <header class="header">
-    <nav class="nav">
-        <ul class="nav-list">
-            <li class="nav-item"></li>
+        <header class="header section">
+    <div class="header-container">
+        <img
+            srcset="/stp-8891/assets/header_logo@1x-a06e2fd3.png 1x, /stp-8891/assets/header_logo@2x-f93b2de5.png 2x"
+            src="/stp-8891/assets/header_logo@1x-a06e2fd3.png"
+            alt="Logo"
+            class="image-header"
+            width="60"
+            height="60"
+            loading="lazy"
+        />
 
-            <li class="nav-item"></li>
-        </ul>
-        <button
-            type="button"
-            class="burger-btn visually-hidden"
-            data-action="open"
-        >
-            Open menu
-        </button>
-        <div class="burger-menu visually-hidden" data-visible="close">
-            <ul>
-                <li><a href="#">link-1</a></li>
-                <li><a href="#">link-2</a></li>
-                <li><a href="#">link-3</a></li>
-                <li><a href="#">link-4</a></li>
+        <nav class="nav">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="#benefits">Benefits</a></li>
+                <li class="nav-item">
+                    <a href="#game-description">Game Description</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#key-features">Key Features</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#main-characters">Main Characters</a>
+                </li>
+                <li class="nav-item"><a href="#gallery">Gallery</a></li>
+                <li class="nav-item"><a href="#reviews">Reviews</a></li>
             </ul>
-            <button type="button" class="btn-close" data-action="close">
-                close
-            </button>
-        </div>
-    </nav>
+        </nav>
+
+        <a
+            class="hero-button header-button"
+            target="_blank"
+            href="https://play.google.com/store/apps/details?id=carts.battle.twisted&hl=en&gl=us"
+        >
+            Download & Race
+        </a>
+
+        <button
+            class="header-burger-button"
+            type="button"
+            aria-label="Menu"
+            data-action="open-menu"
+        >
+            <svg class="header-burger-icon" width="20" height="20">
+                <use href="/stp-8891/sprite.svg#icon-burger"></use>
+            </svg>
+        </button>
+    </div>
 </header>
+<div class="mobile-menu-background" data-menu-background>
+    <div class="mobile-menu-wrapper">
+        <button
+            class="mobile-menu-close-button"
+            type="button"
+            aria-label="Close"
+            data-action="close-menu"
+        >
+            <svg class="mobile-menu-close-icon" width="20" height="20">
+                <use href="/stp-8891/sprite.svg#icon-close"></use>
+            </svg>
+        </button>
+        <nav>
+            <ul class="mobile-menu-nav-list">
+                <li class="mobile-menu-nav-item">
+                    <a href="#benefits" data-mobile-link>Benefits</a>
+                </li>
+                <li class="mobile-menu-nav-item">
+                    <a href="#game-description" data-mobile-link
+                        >Game Description</a
+                    >
+                </li>
+                <li class="mobile-menu-nav-item">
+                    <a href="#key-features" data-mobile-link>Key Features</a>
+                </li>
+                <li class="mobile-menu-nav-item">
+                    <a href="#main-characters" data-mobile-link
+                        >Main Characters</a
+                    >
+                </li>
+                <li class="mobile-menu-nav-item">
+                    <a href="#gallery" data-mobile-link>Gallery</a>
+                </li>
+                <li class="mobile-menu-nav-item">
+                    <a href="#reviews" data-mobile-link>Reviews</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</div>
 
 
         <main>
@@ -64,7 +126,13 @@
             <h1 class="hero-title">
                 <span class="hero-title-span">Enter</span> the Combat Arena Now!
             </h1>
-            <button type="button" class="hero-button">Download & Race</button>
+            <a
+                class="hero-button"
+                target="_blank"
+                href="https://play.google.com/store/apps/details?id=carts.battle.twisted&hl=en&gl=us"
+            >
+                Download & Race
+            </a>
         </div>
     </div>
 </section>
@@ -128,8 +196,41 @@
             
         </main>
 
+        <footer class="footer section">
+    <div class="container footer-container">
+        <img
+            srcset="/stp-8891/assets/header_logo@1x-a06e2fd3.png 1x, /stp-8891/assets/header_logo@2x-f93b2de5.png 2x"
+            src="/stp-8891/assets/header_logo@1x-a06e2fd3.png"
+            alt="Logo"
+            class="image-header image-footer"
+            width="60"
+            height="60"
+            loading="lazy"
+        />
+        <ul class="footer-list">
+            <li class="footer-list-item">
+                <a href="/terms-of-use.html">Terms of Use</a>
+            </li>
+            <li class="footer-list-item">
+                <a href="/cookie-policy.html">Cookie Policy</a>
+            </li>
+            <li class="footer-list-item">
+                <a href="/privacy-policy.html">Privacy Policy</a>
+            </li>
+            <li class="footer-list-item">
+                <a href="/contact-support.html">Contact Support</a>
+            </li>
+        </ul>
+        <p class="footer-text">
+            &copy; 2025 fbsytozevl.xyz <br />
+            All Rights Reserved
+        </p>
+        <h6 class="footer-title">Karts Battle</h6>
+    </div>
+</footer>
+
         
-        
+
 
         
     </body>
