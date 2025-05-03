@@ -1,0 +1,116 @@
+.hero {
+    margin: 0 auto;
+    background-image: url(/img/hero/ellipse.png), url(/img/hero/background.png);
+    background-repeat: no-repeat;
+    background-position: -6% 140%, 50% 50%;
+    background-size: 216px, auto;
+    padding: 54px 20px 48px;
+    position: relative;
+    @include media(desktop) {
+        background-image: url(/img/hero/ellipse-desktop.png),
+            url(/img/hero/background-desktop.png);
+        background-position: 0% 40%, 50% 50%;
+        background-size: 565px 570px, auto;
+        padding: 266px 112px 288px;
+    }
+}
+.hero::after {
+    content: '';
+    position: absolute;
+    background-image: url(/img/hero/arrow.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 44px;
+    height: 44px;
+    bottom: -22px;
+    left: 138px;
+    @include media(desktop) {
+        background-image: url(/img/hero/arrow-desktop.png);
+        width: 100px;
+        height: 100px;
+        bottom: -50px;
+        left: 550px;
+    }
+}
+.hero-container {
+    padding: 0;
+}
+.hero-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 165px;
+    @include media(desktop) {
+        width: 340px;
+    }
+}
+.hero-title {
+    font-size: 26px;
+    line-height: 0.8;
+    text-transform: uppercase;
+    text-align: center;
+    color: #343333;
+    @include media(desktop) {
+        letter-spacing: -0.06em;
+        font-size: 60px;
+        line-height: 0.83;
+        text-transform: none;
+    }
+}
+.hero-title-span::after {
+    @include media(desktop) {
+        content: '\A';
+        white-space: pre;
+    }
+}
+.hero-button {
+    position: relative;
+    display: inline-block;
+    padding: 9px;
+    width: 128px;
+    height: 32px;
+    border-radius: 8px;
+    border: none;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1;
+    color: #fff;
+    background-color: #fcf596;
+    z-index: 1;
+    @include media(desktop) {
+        border-radius: 16px;
+        width: 240px;
+        height: 60px;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 1.4;
+    }
+}
+
+.hero-button::after {
+    content: '';
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    width: 126px;
+    height: 30px;
+    background-color: #1f3fc1;
+    border: 1px solid #393939;
+    border-radius: 8px;
+    z-index: -1;
+    @include media(desktop) {
+        border-radius: 12px;
+        width: 232px;
+        height: 52px;
+        top: 4px;
+        left: 4px;
+    }
+}
+.hero-button:hover {
+    background-color: #1f3fc1;
+    color: #1d1d1d;
+}
+.hero-button:hover::after {
+    background-color: #fcf596;
+}

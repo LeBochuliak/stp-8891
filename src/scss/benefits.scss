@@ -4,9 +4,9 @@
     background-image: url(/img/benefits/today-is.png),
         url(/img/benefits/tire-traces-right.png), url(/img/benefits/car.png),
         url(/img/benefits/tire-traces.png), url(/img/benefits/texture.png);
-    background-size: auto;
+    background-size: 320px 284px, auto, 80px 68px, auto, auto;
     background-repeat: no-repeat;
-    background-position: 50% 50%, 50% -1%, 67% 100%, 45% 99.5%, 50% 50%;
+    background-position: 50% 50%, 700% -5%, 100% 99%, 45% 99.5%, 50% 50%;
 
     @include media(desktop) {
         padding-bottom: 220px;
@@ -16,11 +16,14 @@
             url(/img/benefits/car-desktop.png),
             url(/img/benefits/tire-traces-desktop.png),
             url(/img/benefits/texture-desktop.png);
-        background-position: 50% 44%, 78% -14%, 86% 102%, 12% 98%, 50% 50%;
+        background-size: 566px 460px, auto, 240px 204px, auto, auto;
+        background-position: 50% 44%, 100% -10%, 100% 100%, -650% 90%, 50% 50%;
     }
 }
 .section-title-benefits {
-    margin-bottom: 90px;
+    @include media(desktop) {
+        margin-bottom: 90px;
+    }
 }
 .benefits-list {
     display: flex;
