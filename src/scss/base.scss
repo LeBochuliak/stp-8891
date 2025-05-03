@@ -49,3 +49,25 @@ main {
 .hide {
     display: none;
 }
+.section-title {
+    font-size: 28px;
+    line-height: 0.83;
+    letter-spacing: -0.06em;
+    text-transform: uppercase;
+    text-align: center;
+    color: #343333;
+    display: inline-block;
+    margin-bottom: 26px;
+}
+.section-title::before {
+    content: '';
+    display: inline-block;
+    background-image: url(/img/title-decor.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 68px;
+    height: 65px;
+    vertical-align: middle;
+    margin-right: -52px;
+    margin-top: -5px;
+}
