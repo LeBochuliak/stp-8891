@@ -1,5 +1,6 @@
 .game-description {
-    padding: 0;
+    overflow: hidden;
+    padding: 0 0 8px;
     background-image: url(/img/game-description/texture.png);
     background-repeat: no-repeat;
     background-size: 320px 924px;
@@ -17,7 +18,7 @@
     width: 900px;
     text-align: left;
     @include media(desktop) {
-        margin-left: 40px;
+        margin-left: 24px;
     }
 }
 .game-description-container {
@@ -36,7 +37,7 @@
     @include media(desktop) {
         width: 351px;
         margin-right: 34px;
-        margin-left: 40px;
+        margin-left: 24px;
     }
 }
 .game-description-wrapper {
