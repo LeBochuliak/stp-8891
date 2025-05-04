@@ -1,0 +1,535 @@
+.features-wrapper {
+    padding: 40px 0;
+    background: url(../images/mobile/key-features/titleDecor.png) 15px 17px/68px
+            no-repeat,
+        url(../images/mobile/key-features/imageBurstBg.jpg) -3.819px -1px/334.598px
+            143px no-repeat,
+        #ffc966;
+}
+
+.features-title {
+    color: #343333;
+    font-family: Coiny;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 83%;
+    letter-spacing: -1.68px;
+    text-transform: uppercase;
+    padding-left: 34px;
+}
+
+.features-cards {
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.feature-item {
+    padding-bottom: 20px; /* відступ вниз між елементами */
+    background: #ffeb9b;
+    border-radius: 16px;
+    margin-bottom: 41px;
+}
+
+.weapon-card {
+    max-width: 288px;
+    background-color: #5c3e3e;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    overflow: visible;
+    background-image: url(../images/mobile/key-features/object.png),
+        url(../images/mobile/key-features/objects.png);
+    background-repeat: no-repeat, no-repeat;
+    background-position: 6px 159px, 164px 180px;
+    background-size: 80px, 30px;
+    margin-bottom: 8px;
+}
+
+.weapon-icon {
+    max-width: 342px;
+    margin-top: -55px;
+    margin-left: -23px;
+}
+
+.maskWeapon-card {
+    max-width: 288px;
+    background-color: #5c3e3e;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: visible;
+    background-image: url(../images/mobile/key-features/objects.png),
+        url(../images/mobile/key-features/object.png);
+    background-repeat: no-repeat, no-repeat;
+    background-position: 36px 48px, 185px 44px;
+    background-size: 80px, 30px;
+    margin-bottom: 16px;
+}
+.maskWeapon-icon {
+    max-width: 182px;
+    margin-top: 118px;
+    margin-left: 106px;
+}
+
+.feature-content {
+    display: flex;
+    width: 240px;
+    padding: 8px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    border-radius: 16px;
+    border: 1px solid var(--dark-stroke, #393939);
+    background: var(--orange-200, #ffb95a);
+    margin: 0 24px;
+    margin-bottom: 8px;
+    overflow: visible;
+}
+
+.title-weapon {
+    color: #1d1d1d;
+    text-align: start;
+    font-family: 'Coiny';
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: -1.68px;
+    text-transform: uppercase;
+    overflow: visible;
+    // margin-bottom: 8px;
+}
+
+.text-weapon {
+    color: #1d1d1d;
+    font-family: 'Open Sans';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    text-align: start;
+}
+
+.wrapper-decor {
+    display: flex;
+    border-radius: 100%;
+    margin-bottom: -36px;
+    margin-left: 6px;
+    background-color: #ffc966;
+    width: 50px;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+.decor {
+    background-color: #ffc966;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+.nitro-card {
+    max-width: 288px;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: visible;
+    background-position: 6px 159px, 164px 180px;
+    background-size: 80px, 30px;
+    margin-bottom: 8px;
+}
+
+.wrapper-nitro {
+    width: 288px;
+    border: 1px solid black;
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+}
+
+.nitro-icon {
+    width: 178px;
+    margin-top: -10px;
+}
+
+.house-card {
+    margin-bottom: 8px;
+}
+
+.house-icon {
+    display: block;
+    width: 100%;
+}
+
+.yard-card {
+    margin-bottom: 16px;
+}
+
+.yard-icon {
+    max-width: 306px;
+    margin-left: -15px;
+}
+
+.mask-card {
+    max-width: 288px;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: visible;
+    background-position: 6px 159px, 164px 180px;
+    background-size: 80px, 30px;
+    margin-bottom: 8px;
+    background: url(../images/mobile/key-features/box.png) 16px 21px/24px 26px
+            no-repeat,
+        url(../images/mobile/key-features/shield.png) 228px -12px/60px 63px no-repeat,
+        url(../images/mobile/key-features/star.png) 169px -3px/32px 33px no-repeat;
+}
+
+.wrapper-mask {
+    width: 288px;
+    border: 1px solid black;
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    height: 278px;
+}
+
+.mask-icon {
+    width: 266px;
+}
+
+.mask-decor {
+    background: url(../images/mobile/key-features/star.png) 40px 80px/32px 33px
+            no-repeat,
+        url(../images/mobile/key-features/box.png) 40px 208px/32px 35px
+            no-repeat;
+    overflow: visible;
+}
+
+.nitrocar-card {
+    // max-width: 288px;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: visible;
+    margin-bottom: 8px;
+}
+
+.nitrocar-icon {
+    width: 288px;
+}
+
+.car-card {
+    background-color: #1871dc;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: visible;
+
+    margin-bottom: 16px;
+}
+
+.car-icon {
+    width: 295px;
+    height: 278px;
+}
+
+@media screen and (min-width: 1200px) {
+    .features-section {
+        padding: 80px 0;
+        background: url(../images/mobile/key-features/imageBurstBg.jpg) 230px -40px/1116px
+                no-repeat,
+            #ffc966;
+    }
+    .features-wrapper {
+        padding: 80px 0;
+        background: url(../images/decktop/key-feature/titleDecor.png) 37px 22px/170px
+            no-repeat;
+    }
+    .features-title {
+        font-size: 60px;
+        line-height: 100%;
+        padding-left: 93px;
+        letter-spacing: -3.6px;
+    }
+    .feature-item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 32px;
+    }
+
+    /* НЕпарні елементи (без класу --double): текст зліва, картинка справа */
+    .feature-item:not(.feature-item--double) {
+        flex-direction: row;
+    }
+
+    .feature-item {
+        position: relative;
+        display: flex;
+        align-items: center;
+        margin-bottom: 40px;
+        border-radius: 24px;
+        background: url(../images/decktop/key-feature/subtract.png) no-repeat;
+        background-size: cover;
+        overflow: visible;
+        width: 100%;
+        max-height: 342px;
+        padding-bottom: 0;
+    }
+    .wrapper-weapon {
+        position: relative;
+        display: flex;
+        border-radius: 16px;
+        flex-basis: 90%;
+        overflow: visible;
+        max-width: 760px;
+        min-height: 342px;
+        background-color: #5c3e3e;
+        background-image: url(../images/decktop/key-feature/emp.png),
+            url(../images/mobile/key-features/objects.png),
+            url(../images/mobile/key-features/object.png);
+        background-position: 580px 25px, 47px 150px, 257px 261px;
+        background-size: 128px 128px, 120px 120px, 56px 56px;
+        background-repeat: no-repeat;
+    }
+    .feature-item::before {
+        content: '';
+        position: absolute;
+        top: -30px;
+        left: 12px;
+        width: 72px;
+        height: 72px;
+        background: url(../images/decktop/key-feature/arrowdecor.svg) no-repeat
+            center;
+        background-size: contain;
+        z-index: 2;
+    }
+    .wrapper-weapon::before {
+        content: '';
+        position: absolute;
+        top: -165px;
+        left: 65px;
+        width: 520px;
+        height: 480px;
+        background: url(../images/decktop/key-feature/weapon.png) no-repeat
+            center;
+        background-size: contain;
+        z-index: 1;
+    }
+
+    .wrapper-weapon::after {
+        content: '';
+        position: absolute;
+        top: 218px;
+        left: 605px;
+        width: 140px;
+        height: 140px;
+        background: url(../images/decktop/key-feature/maskWeapon.png) no-repeat
+            center;
+        background-size: contain;
+        z-index: 2;
+    }
+
+    .feature-item:not(.feature-item--double) .feature-content {
+        flex: 1 1 1%;
+        order: 1;
+        margin: 158px 0 32px 32px;
+    }
+    .wrapper-house {
+        position: relative;
+        display: flex;
+        border-radius: 16px;
+        flex-basis: 90%;
+        overflow: visible;
+        min-height: 360px;
+    }
+    .wrapper-house::before {
+        content: '';
+        position: absolute;
+        top: 10px;
+        left: 38px;
+        width: 760px;
+        height: 367px;
+        background: url(../images/decktop/key-feature/arena.png) no-repeat
+            center;
+        background-size: contain;
+        z-index: 1;
+    }
+
+    .feature-item:not(.feature-item--double)
+        > *:not(.feature-content):not(.wrapper-decor) {
+        flex: 1 1 50%;
+        order: 2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .wrappers-nitro {
+        position: relative;
+        display: flex;
+        border-radius: 16px;
+        flex-basis: 90%;
+        overflow: visible;
+        max-width: 760px;
+        min-height: 342px;
+        background-color: #1871dc;
+    }
+
+    .wrappers-nitro::before {
+        content: '';
+        position: absolute;
+        top: 17px;
+        left: -42px;
+        width: 459px;
+        height: 341.44px;
+        background: url(../images/decktop/key-feature/car.png) no-repeat center;
+        background-size: contain;
+        z-index: 1;
+    }
+    .wrappers-nitro::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 442px;
+        width: 363px;
+        height: 342px;
+        background: url(../images/decktop/key-feature/nitrocar.png) no-repeat
+            center;
+        background-size: contain;
+        z-index: 2;
+    }
+
+    /* Декор завжди внизу */
+    .feature-item .wrapper-decor {
+        order: 3;
+        position: absolute;
+        bottom: -20px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: -1;
+    }
+
+    /* ПАРНІ елементи (з класом --double): текст — картинка — текст */
+    .feature-item--double {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 32px;
+        position: relative;
+    }
+
+    .feature-item--double .feature-content-wrapper.left-text,
+    .feature-item--double .feature-content-wrapper.right-text {
+        flex: 1 1 30%;
+    }
+
+    .feature-item--double .feature-content-wrapper.left-text {
+        order: 1;
+        margin: 158px 0 32px 32px;
+    }
+
+    .feature-item--double .nitro-card {
+        order: 2;
+        flex: 0 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .feature-item--double .feature-content-wrapper.right-text {
+        order: 3;
+        margin: 166px 32px 32px 134px;
+    }
+
+    .feature-item--double .wrapper-nitro {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 352px;
+        height: 342px;
+        position: relative;
+        left: 73px;
+        top: 5px;
+    }
+
+    .feature-item--double .nitro-icon {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .nitro-card {
+        position: relative;
+        display: flex;
+        border-radius: 16px;
+        flex-basis: 90%;
+        overflow: visible;
+        max-width: 760px;
+        min-height: 342px;
+    }
+    .nitro-card::before {
+        content: '';
+        position: absolute;
+        top: -7px;
+        left: 125px;
+        width: 277px;
+        height: 355px;
+        background: url(../images/decktop/key-feature/nitroNate.png) no-repeat
+            center;
+        background-size: contain;
+        z-index: 1;
+    }
+    .wrapper-mask {
+        width: 352px;
+        height: 342px;
+    }
+    .mask-card {
+        position: relative;
+        display: flex;
+        flex-basis: 90%;
+        overflow: visible;
+        max-width: 760px;
+        min-height: 342px;
+        background-image: url(../images/decktop/key-feature/emp.png),
+            url(../images/mobile/key-features/objects.png),
+            url(../images/mobile/key-features/object.png);
+        background-position: 580px 25px, 47px 150px, 257px 261px;
+        background-size: 128px 128px, 120px 120px, 56px 56px;
+        background-repeat: no-repeat;
+        left: 390px;
+        top: 6px;
+    }
+    .mask-card::before {
+        content: '';
+        position: absolute;
+        top: 90px;
+        left: 52px;
+        width: 267px;
+        height: 265px;
+        background: url(../images/decktop/key-feature/maskOffline.png) no-repeat
+            center;
+        background-size: contain;
+        z-index: 1;
+    }
+
+    .weapon-card,
+    .maskWeapon-card,
+    .house-card,
+    .yard-card,
+    .nitro-card,
+    .car-card,
+    .nitrocar-icon,
+    .wrapper-nitro,
+    .nitro-icon,
+    .mask-icon {
+        display: none;
+    }
+}
