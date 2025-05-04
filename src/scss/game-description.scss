@@ -1,0 +1,131 @@
+.game-description {
+    padding: 0;
+    background-image: url(/img/game-description/texture.png);
+    background-repeat: no-repeat;
+    background-size: 320px 924px;
+    background-position: 50% 55%;
+    @include media(desktop) {
+        margin-top: -52px;
+        padding-bottom: 36px;
+        background-image: url(/img/game-description/texture-desktop.png);
+        background-repeat: no-repeat;
+        background-size: 1200px 342px;
+        background-position: 50% 50%;
+    }
+}
+.game-description-title {
+    width: 900px;
+    text-align: left;
+    @include media(desktop) {
+        margin-left: 40px;
+    }
+}
+.game-description-container {
+    padding: 0px 16px 24px;
+    position: relative;
+    @include media(desktop) {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+}
+.image-game-description {
+    width: 288px;
+    height: 401px;
+    margin: 24px auto;
+    @include media(desktop) {
+        width: 351px;
+        margin-right: 34px;
+        margin-left: 40px;
+    }
+}
+.game-description-wrapper {
+    width: 284px;
+    @include media(desktop) {
+        width: 614px;
+    }
+}
+.game-title {
+    color: #1d1d1d;
+    margin: 0 auto 16px;
+    @include media(desktop) {
+        font-size: 24px;
+    }
+}
+
+.game-text {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1.4;
+    color: #1d1d1d;
+    margin-bottom: 8px;
+    @include media(desktop) {
+        font-size: 20px;
+        margin-bottom: 16px;
+    }
+}
+.game-text:last-child {
+    margin-bottom: 0px;
+}
+.game-subtitle {
+    font-size: 14px;
+    line-height: 1.4;
+    text-transform: uppercase;
+    color: #c7f6ff;
+    text-align: center;
+    background-color: #1f3fc1;
+    width: 100%;
+    padding: 8px 16px;
+    margin: 0 auto;
+    @include media(desktop) {
+        font-size: 24px;
+        line-height: 1;
+        padding: 24px 4px;
+        margin-bottom: 16px;
+    }
+}
+.game-subtitle-span {
+    display: none;
+    @include media(desktop) {
+        display: inline;
+    }
+}
+.marquee-container {
+    position: relative;
+    padding-top: 8px;
+    z-index: -1;
+    overflow: hidden;
+    width: 100%;
+    transform: rotate(4deg);
+    @include media(desktop) {
+        transform: rotate(4deg);
+    }
+}
+.marquee-track {
+    display: flex;
+    width: max-content;
+    will-change: transform;
+}
+.marquee-track.animate {
+    animation: scrollText 180s linear infinite;
+}
+.marquee-text {
+    white-space: nowrap;
+    padding: 0 8px;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #1d1d1d;
+    @include media(desktop) {
+        font-size: 24px;
+        padding: 0 16px;
+    }
+}
+
+@keyframes scrollText {
+    from {
+        transform: translateX(0%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
