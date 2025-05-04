@@ -79,6 +79,13 @@
 .cookies-container .decline-cookies-button::after {
     background-color: #1871dc;
 }
+.cookies-container .decline-cookies-button:hover::after,
+.cookies-container .decline-cookies-button:focus::after {
+    background-color: #ffeb9b;
+}
+.cookies-container .decline-cookies-button:active::after {
+    background-color: #fcf596;
+}
 .cookies-button-wrapper {
     @include media(desktop) {
         margin-left: auto;

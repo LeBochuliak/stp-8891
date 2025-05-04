@@ -108,10 +108,15 @@
         left: 4px;
     }
 }
-.hero-button:hover {
+.hero-button:hover,
+.hero-button.focus {
     background-color: #1f3fc1;
     color: #1d1d1d;
 }
-.hero-button:hover::after {
+.hero-button:hover::after,
+.hero-button.focus::after {
     background-color: #fcf596;
+}
+.hero-button:active::after {
+    background-color: #f4eb74;
 }

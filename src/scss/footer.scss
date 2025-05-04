@@ -78,7 +78,12 @@
         max-width: 252px;
     }
 }
-.footer-list-link {
+.footer-list-item:hover,
+.footer-list-item:focus {
+    color: #ffb95a;
+}
+.footer-list-item:active {
+    color: #eaa62c;
 }
 .footer-text {
     font-family: 'Open Sans', sans-serif;

@@ -9,6 +9,13 @@
     gap: 11px;
     margin-bottom: 16px;
 }
+.back-link:hover,
+.back-link:focus {
+    color: #eaa62c;
+}
+.back-link:active {
+    color: #da8c00;
+}
 .terms-title {
     margin-bottom: 0;
     text-align: left;
