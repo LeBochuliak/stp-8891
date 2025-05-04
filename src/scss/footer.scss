@@ -1,6 +1,7 @@
 .footer {
     position: relative;
     padding-top: 28px;
+    overflow: visible;
     @include media(desktop) {
         padding-top: 110px;
     }
