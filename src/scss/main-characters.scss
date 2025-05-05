@@ -1,0 +1,109 @@
+.container-characters {
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 32px;
+    border: 1px solid #393939;
+    background-color: #84eafa;
+    width: 288px;
+}
+
+.section-characters {
+}
+
+.characters-items {
+    position: relative;
+    width: 180px;
+    left: 17px;
+    padding: 27px 12px;
+    //     background: url(../images/decktop/characters/light.png) 213px 184px/93px
+    //             187px no-repeat,
+    //         url(../images/decktop/characters/car.png) 273px 116px/130px 115px
+    //             no-repeat;
+}
+
+.background-items-1 {
+    background: url(../images/decktop/characters/subtractmob.png) no-repeat;
+}
+
+.background-items-2 {
+    background: url(../images/decktop/characters/subtractred.png) no-repeat;
+}
+
+.characters-items::before {
+    content: '';
+    position: absolute;
+    // top: 228px;
+    // left: 142px;
+    right: -12px;
+    bottom: -7px;
+    width: 50px;
+    height: 50px;
+    background: url(../images/decktop/characters/circle.png) no-repeat center;
+    background-size: contain;
+    z-index: 2;
+}
+
+.characters-image {
+    margin: -48px auto 12px;
+    width: 118px;
+}
+
+.characters-content {
+    width: 156px;
+}
+
+.characters-title {
+    color: #1d1d1d;
+    font-family: 'Coiny';
+    font-size: 16px;
+    line-height: 100%;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+
+.characters-text {
+    color: #1d1d1d;
+    font-family: 'Open Sans';
+    font-size: 14px;
+    line-height: 120%;
+}
+
+.arrow-1 {
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+    left: -23px;
+}
+
+.arrow-2 {
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+    right: -23px;
+}
+
+@media screen and (min-width: 1200px) {
+    .section-title-characters {
+        display: block;
+    }
+
+    .characters-items {
+        margin: 0 auto;
+    }
+}
+
+.footnote-light {
+    position: absolute;
+    bottom: 12px;
+    right: -87px;
+    width: 93px;
+    height: 187px;
+}
+
+.footnote-car {
+    position: absolute;
+    top: 24px;
+    right: -141px;
+    width: 85px;
+    height: 90px;
+}
