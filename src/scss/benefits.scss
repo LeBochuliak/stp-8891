@@ -4,20 +4,32 @@
     background-image: url(/img/benefits/today-is.png),
         url(/img/benefits/tire-traces-right.png), url(/img/benefits/car.png),
         url(/img/benefits/tire-traces.png), url(/img/benefits/texture.png);
-    background-size: 320px 284px, auto, 80px 68px, auto, auto;
+    background-size: 320px 284px, auto, 80px 68px, auto, 320px 828px;
     background-repeat: no-repeat;
-    background-position: 50% 50%, 700% -5%, 98% 99%, -220% 99%, 50% 50%;
-
+    background-position: 50% 50%, 700% -5%, 98% 99%, -220% 99%, 50% 55%;
+    @include media(retina-mobile) {
+        background-image: url(/img/benefits/today-is@2x.png),
+            url(/img/benefits/tire-traces-right@2x.png),
+            url(/img/benefits/car@2x.png), url(/img/benefits/tire-traces@2x.png),
+            url(/img/benefits/texture@2x.png);
+    }
     @include media(desktop) {
-        padding-bottom: 220px;
+        padding-bottom: 244px;
         padding-top: 94px;
         background-image: url(/img/benefits/today-is-desktop.png),
+            url(/img/benefits/texture-desktop.png),
             url(/img/benefits/tire-traces-right-desktop.png),
             url(/img/benefits/car-desktop.png),
-            url(/img/benefits/tire-traces-desktop.png),
-            url(/img/benefits/texture-desktop.png);
-        background-size: 566px 460px, auto, 240px 204px, auto, auto;
-        background-position: 50% 47%, 100% -10%, 100% 100%, -650% 90%, 50% 50%;
+            url(/img/benefits/tire-traces-desktop.png);
+        background-size: 566px 460px, auto, auto, 240px 204px, auto;
+        background-position: 50% 45.5%, 50% 50%, 130% -10%, 97% 100%, -440% 96%;
+    }
+    @include media(retina-desktop) {
+        background-image: url(/img/benefits/today-is-desktop@2x.png),
+            url(/img/benefits/texture-desktop@2x.png),
+            url(/img/benefits/tire-traces-right-desktop@2x.png),
+            url(/img/benefits/car-desktop@2x.png),
+            url(/img/benefits/tire-traces-desktop@2x.png);
     }
 }
 .section-title-benefits {

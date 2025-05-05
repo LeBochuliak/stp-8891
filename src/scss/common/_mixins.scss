@@ -30,9 +30,18 @@ screen types:
         @media screen and (min-width: $desktop) {
             @content;
         }
+    } @else if $_screen == retina-mobile {
+        @media screen and (min-device-pixel-ratio: 2) and (max-width: $to-desktop),
+            screen and (min-resolution: 192dpi) and (max-width: $to-desktop) {
+            @content;
+        }
+    } @else if $_screen == retina-desktop {
+        @media screen and (min-device-pixel-ratio: 2) and (min-width: $desktop),
+            screen and (min-resolution: 192dpi) and (min-width: $desktop) {
+            @content;
+        }
     }
 }
-
 @mixin font($_fsz, $_lnh) {
     font-size: #{$_fsz}px;
 

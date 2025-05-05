@@ -1,32 +1,55 @@
-<header class="header section">
+<header class="header">
     <div class="header-container">
-        <img
-            srcset="
-                /img/header/header_logo@1x.png 1x,
-                /img/header/header_logo@2x.png 2x
-            "
-            src="/img/header/header_logo@1x.png"
-            alt="Logo"
-            class="image-header"
-            width="60"
-            height="60"
-            loading="lazy"
-        />
+        <picture>
+            <source
+                srcset="
+                    /img/header/header_logo@1x.png 1x,
+                    /img/header/header_logo@2x.png 2x
+                "
+                media="(max-width: 1199px)"
+                type="image/png"
+            />
+            <source
+                srcset="
+                    /img/header/header_logo-desktop@1x.png 1x,
+                    /img/header/header_logo-desktop@2x.png 2x
+                "
+                media="(min-width: 1200px)"
+                type="image/png"
+            />
+
+            <img
+                src="/img/header/header_logo@1x.png"
+                alt="Logo"
+                class="image-header"
+                width="60"
+                height="60"
+                loading="lazy"
+            />
+        </picture>
 
         <nav class="nav">
             <ul class="nav-list">
-                <li class="nav-item"><a href="#benefits">Benefits</a></li>
                 <li class="nav-item">
-                    <a href="#game-description">Game Description</a>
+                    <a href="#benefits" data-nav-link>Benefits</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#key-features">Key Features</a>
+                    <a href="#game-description" data-nav-link
+                        >Game Description</a
+                    >
                 </li>
                 <li class="nav-item">
-                    <a href="#main-characters">Main Characters</a>
+                    <a href="#key-features" data-nav-link>Key Features</a>
                 </li>
-                <li class="nav-item"><a href="#gallery">Gallery</a></li>
-                <li class="nav-item"><a href="#reviews">Reviews</a></li>
+                <li class="nav-item">
+                    <a href="#main-characters" data-nav-link>Main Characters</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#gallery" data-nav-link>Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#reviews" data-nav-link>Reviews</a>
+                </li>
             </ul>
         </nav>
 
@@ -51,7 +74,7 @@
     </div>
 </header>
 <div class="mobile-menu-background" data-menu-background>
-    <div class="mobile-menu-wrapper">
+    <div class="mobile-menu-wrapper" data-mobile-wrapper>
         <button
             class="mobile-menu-close-button"
             type="button"

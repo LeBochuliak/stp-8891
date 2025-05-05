@@ -1,8 +1,8 @@
 .back-link {
     font-family: 'Open Sans', sans-serif;
     font-weight: 600;
-    font-size: 16px;
-    line-height: 1.4;
+    font-size: 12px;
+    line-height: 1.2;
     color: #1d1d1d;
     display: flex;
     align-items: center;
@@ -10,11 +10,16 @@
     margin-bottom: 16px;
 }
 .back-link:hover,
-.back-link:focus {
+.back-link:focus,
+.back-icon:hover,
+.back-icon:focus {
     color: #eaa62c;
+    fill: #eaa62c;
 }
-.back-link:active {
+.back-link:active,
+.back-icon:active {
     color: #da8c00;
+    fill: #da8c00;
 }
 .terms-title {
     margin-bottom: 0;

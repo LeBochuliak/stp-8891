@@ -1,19 +1,21 @@
 .header {
     position: fixed;
     top: 0;
-    left: 50%;
-    transform: translateX(-50%);
+    left: 0;
+    right: 0;
+    margin: 0 auto;
     background-color: #c7f6ff;
     z-index: 999;
     border: 1px solid #393939;
     border-radius: 8px;
     padding: 4px 8px;
-    width: 288px;
+    width: 100%;
+    max-width: 288px;
     height: 32px;
     @include media(desktop) {
         border-radius: 32px;
         padding: 16px;
-        width: 1120px;
+        max-width: 1120px;
         height: 92px;
     }
 }
