@@ -3,7 +3,7 @@
     background-image: url(/img/hero/ellipse.png), url(/img/hero/background.png);
     background-repeat: no-repeat;
     background-position: -6% 140%, 2% 99%;
-    background-size: 220px, auto;
+    background-size: 216px, 320px 220px;
     padding: 54px 20px 48px;
     position: relative;
     @include media(retina-mobile) {
@@ -14,7 +14,7 @@
         background-image: url(/img/hero/ellipse-desktop.png),
             url(/img/hero/background-desktop.png);
         background-position: 0% 40%, 50% 100%;
-        background-size: 565px 570px, auto;
+        background-size: 565px 570px, 1200px 780px;
         padding: 266px 112px 288px;
     }
     @include media(retina-desktop) {
