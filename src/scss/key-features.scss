@@ -1,22 +1,8 @@
 .features-wrapper {
     padding: 40px 0;
-    background: url(../images/mobile/key-features/titleDecor.png) 15px 17px/68px
-            no-repeat,
-        url(../images/mobile/key-features/imageBurstBg.jpg) -3.819px -1px/334.598px
+    background: url(/images/mobile/key-features/imageBurstBg.jpg) -3.819px -1px/334.598px
             143px no-repeat,
         #ffc966;
-}
-
-.features-title {
-    color: #343333;
-    font-family: Coiny;
-    font-size: 28px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 83%;
-    letter-spacing: -1.68px;
-    text-transform: uppercase;
-    padding-left: 34px;
 }
 
 .features-cards {
@@ -40,8 +26,8 @@
     display: flex;
     align-items: center;
     overflow: visible;
-    background-image: url(../images/mobile/key-features/object.png),
-        url(../images/mobile/key-features/objects.png);
+    background-image: url(/images/mobile/key-features/object.png),
+        url(/images/mobile/key-features/objects.png);
     background-repeat: no-repeat, no-repeat;
     background-position: 6px 159px, 164px 180px;
     background-size: 80px, 30px;
@@ -62,8 +48,8 @@
     flex-direction: column;
     align-items: center;
     overflow: visible;
-    background-image: url(../images/mobile/key-features/objects.png),
-        url(../images/mobile/key-features/object.png);
+    background-image: url(/images/mobile/key-features/objects.png),
+        url(/images/mobile/key-features/object.png);
     background-repeat: no-repeat, no-repeat;
     background-position: 36px 48px, 185px 44px;
     background-size: 80px, 30px;
@@ -184,10 +170,10 @@
     background-position: 6px 159px, 164px 180px;
     background-size: 80px, 30px;
     margin-bottom: 8px;
-    background: url(../images/mobile/key-features/box.png) 16px 21px/24px 26px
+    background: url(/images/mobile/key-features/box.png) 16px 21px/24px 26px
             no-repeat,
-        url(../images/mobile/key-features/shield.png) 228px -12px/60px 63px no-repeat,
-        url(../images/mobile/key-features/star.png) 169px -3px/32px 33px no-repeat;
+        url(/images/mobile/key-features/shield.png) 228px -12px/60px 63px no-repeat,
+        url(/images/mobile/key-features/star.png) 169px -3px/32px 33px no-repeat;
 }
 
 .wrapper-mask {
@@ -204,10 +190,9 @@
 }
 
 .mask-decor {
-    background: url(../images/mobile/key-features/star.png) 40px 80px/32px 33px
+    background: url(/images/mobile/key-features/star.png) 40px 80px/32px 33px
             no-repeat,
-        url(../images/mobile/key-features/box.png) 40px 208px/32px 35px
-            no-repeat;
+        url(/images/mobile/key-features/box.png) 40px 208px/32px 35px no-repeat;
     overflow: visible;
 }
 
@@ -244,26 +229,18 @@
 @media screen and (min-width: 1200px) {
     .features-section {
         padding: 80px 0;
-        background: url(../images/mobile/key-features/imageBurstBg.jpg) 230px -40px/1116px
+        background: url(/images/mobile/key-features/imageBurstBg.jpg) 230px -40px/1116px
                 no-repeat,
             #ffc966;
+        overflow: visible;
     }
-    .features-wrapper {
-        padding: 80px 0;
-        background: url(../images/decktop/key-feature/titleDecor.png) 37px 22px/170px
-            no-repeat;
-    }
-    .features-title {
-        font-size: 60px;
-        line-height: 100%;
-        padding-left: 93px;
-        letter-spacing: -3.6px;
-    }
+
     .feature-item {
         display: flex;
         align-items: center;
         justify-content: space-between;
         gap: 32px;
+        overflow: visible;
     }
 
     /* НЕпарні елементи (без класу --double): текст зліва, картинка справа */
@@ -277,7 +254,7 @@
         align-items: center;
         margin-bottom: 40px;
         border-radius: 24px;
-        background: url(../images/decktop/key-feature/subtract.png) no-repeat;
+        background: url(/img/key-feature/subtract.png) no-repeat;
         background-size: cover;
         overflow: visible;
         width: 100%;
@@ -293,9 +270,9 @@
         max-width: 760px;
         min-height: 342px;
         background-color: #5c3e3e;
-        background-image: url(../images/decktop/key-feature/emp.png),
-            url(../images/mobile/key-features/objects.png),
-            url(../images/mobile/key-features/object.png);
+        background-image: url(/img/key-feature/emp.png),
+            url(/images/mobile/key-features/objects.png),
+            url(/images/mobile/key-features/object.png);
         background-position: 580px 25px, 47px 150px, 257px 261px;
         background-size: 128px 128px, 120px 120px, 56px 56px;
         background-repeat: no-repeat;
@@ -307,8 +284,7 @@
         left: 12px;
         width: 72px;
         height: 72px;
-        background: url(../images/decktop/key-feature/arrowdecor.svg) no-repeat
-            center;
+        background: url(/img/key-feature/arrowdecor.svg) no-repeat center;
         background-size: contain;
         z-index: 2;
     }
@@ -319,8 +295,7 @@
         left: 65px;
         width: 520px;
         height: 480px;
-        background: url(../images/decktop/key-feature/weapon.png) no-repeat
-            center;
+        background: url(/img/key-feature/weapon.png) no-repeat center;
         background-size: contain;
         z-index: 1;
     }
@@ -332,8 +307,7 @@
         left: 605px;
         width: 140px;
         height: 140px;
-        background: url(../images/decktop/key-feature/maskWeapon.png) no-repeat
-            center;
+        background: url(/img/key-feature/maskWeapon.png) no-repeat center;
         background-size: contain;
         z-index: 2;
     }
@@ -358,8 +332,7 @@
         left: 38px;
         width: 760px;
         height: 367px;
-        background: url(../images/decktop/key-feature/arena.png) no-repeat
-            center;
+        background: url(/img/key-feature/arena.png) no-repeat center;
         background-size: contain;
         z-index: 1;
     }
@@ -390,7 +363,7 @@
         left: -42px;
         width: 459px;
         height: 341.44px;
-        background: url(../images/decktop/key-feature/car.png) no-repeat center;
+        background: url(/img/key-feature/car.png) no-repeat center;
         background-size: contain;
         z-index: 1;
     }
@@ -401,8 +374,7 @@
         left: 402px;
         width: 363px;
         height: 342px;
-        background: url(../images/decktop/key-feature/nitrocar.png) no-repeat
-            center;
+        background: url(/img/key-feature/nitrocar.png) no-repeat center;
         background-size: contain;
         z-index: 2;
     }
@@ -425,6 +397,7 @@
         justify-content: center;
         gap: 32px;
         position: relative;
+        overflow: visible;
     }
 
     .feature-item--double .feature-content-wrapper.left-text,
@@ -482,8 +455,7 @@
         left: 125px;
         width: 277px;
         height: 355px;
-        background: url(../images/decktop/key-feature/nitroNate.png) no-repeat
-            center;
+        background: url(/img/key-feature/nitroNate.png) no-repeat center;
         background-size: contain;
         z-index: 1;
     }
@@ -494,19 +466,19 @@
     .mask-card {
         position: relative;
         display: flex;
-        flex-basis: 90%;
+        order: 2;
         overflow: visible;
         max-width: 760px;
         min-height: 342px;
-        background-image: url(../images/decktop/key-feature/emp.png),
-            url(../images/mobile/key-features/objects.png),
-            url(../images/mobile/key-features/object.png);
-        background-position: 580px 25px, 47px 150px, 257px 261px;
-        background-size: 128px 128px, 120px 120px, 56px 56px;
+        background-image: url(/img/key-feature/starBig.png),
+            url(/img/key-feature/bigst.png);
+        background-position: 231px 4px, -30px 32px;
+        background-size: 104px 110px, 150px 160px;
         background-repeat: no-repeat;
-        left: 390px;
+        left: 80px;
         top: 6px;
     }
+
     .mask-card::before {
         content: '';
         position: absolute;
@@ -514,8 +486,7 @@
         left: 52px;
         width: 267px;
         height: 265px;
-        background: url(../images/decktop/key-feature/maskOffline.png) no-repeat
-            center;
+        background: url(/img/key-feature/maskOffline.png) no-repeat center;
         background-size: contain;
         z-index: 1;
     }
