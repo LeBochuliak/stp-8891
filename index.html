@@ -25,7 +25,9 @@
         <title>Karts Battle</title>
         
       <script type="module" crossorigin src="/stp-8891/commonHelpers3.js"></script>
-      <link rel="stylesheet" href="/stp-8891/assets/styles-519b4b72.css">
+      <link rel="modulepreload" crossorigin href="/stp-8891/assets/vendor-01701053.js">
+      <link rel="stylesheet" href="/stp-8891/assets/vendor-1f9fe898.css">
+      <link rel="stylesheet" href="/stp-8891/assets/styles-9eba24c6.css">
     </head>
     <body>
         <header class="header">
@@ -454,103 +456,583 @@
     </div>
 </section>
 
-            <section class="section section-characters">
-    <div class="container container-characters">
-        <h2 class="section-title section-title-characters">Main Characters</h2>
-        <ul class="characters-list">
-            <li class="characters-items background-items-1">
-                <div class="characters-image">
-                    <img
-                        src="../images/decktop/characters/characterNitroNate.png"
-                        alt=""
-                    />
-                </div>
-                <div class="characters-content">
-                    <h3 class="characters-title">Nitro Nate</h3>
-                    <p class="characters-text">
-                        A fearless speedster who thrives on risk and lives for
-                        the thrill of the crash.
-                    </p>
-                </div>
-                <div class="arrow">
-                    <div class="arrow-1">
-                        <img
-                            src="../images/decktop/characters/arrowleft.png"
-                            alt=""
-                        />
+            
+            <section id="gallery" class="section gallery-section">
+    <div class="container">
+        <h2 class="section-title">Gallery</h2>
+        <div class="swiper gallery-swiper">
+            <ul class="swiper-wrapper gallery-list">
+                <li class="swiper-slide">
+                    <div class="wrapper-picture">
+                        <picture>
+                            <source
+                                srcset="
+                                    ../img/gallery/mob/slider1car1@2x.jpg 2x,
+                                    ../img/gallery/mob/slider1car1.jpg    1x
+                                "
+                                media="(max-width: 1199px)"
+                            />
+                            <source
+                                srcset="
+                                    ../img/gallery/desktop/slider1car1@2x.jpg 2x,
+                                    ../img/gallery/desktop/slider1car1.jpg    1x
+                                "
+                            />
+                            <img
+                                src="../img/gallery/mob/slder1car1.jpg"
+                                alt="Gallery image 2"
+                            />
+                        </picture>
+                        <picture>
+                            <source
+                                srcset="
+                                    ../img/gallery/mob/slider1car2@2x.jpg 2x,
+                                    ../img/gallery/mob/slider1car2.jpg    1x
+                                "
+                                media="(max-width: 1199px)"
+                            />
+                            <source
+                                srcset="
+                                    ../img/gallery/desktop/slider1card2@2x.jpg 2x,
+                                    ../img/gallery/desktop/slider1card2.jpg    1x
+                                "
+                            />
+                            <img
+                                src="../img/gallery/mob/slider1car2.jpg"
+                                alt="Gallery image 2"
+                            />
+                        </picture>
+                        <picture>
+                            <source
+                                srcset="
+                                    ../img/gallery/mob/slider1car3@2x.jpg 2x,
+                                    ../img/gallery/mob/slider1car3.jpg    1x
+                                "
+                                media="(max-width: 1199px)"
+                            />
+                            <source
+                                srcset="
+                                    ../img/gallery/desktop/slider1card3@2x.jpg 2x,
+                                    ../img/gallery/desktop/slider1card3.jpg    1x
+                                "
+                            />
+                            <img
+                                src="../img/gallery/mob/slider1car3.jpg"
+                                alt="Gallery image 1"
+                            />
+                        </picture>
                     </div>
-                    <div class="arrow-2">
-                        <img
-                            src="../images/decktop/characters/arrow.png"
-                            alt=""
-                        />
+                </li>
+
+                <li class="swiper-slide">
+                    <div class="wrapper-picture">
+                        <picture>
+                            <source
+                                srcset="
+                                    ../img/gallery/mob/slider2card1@2x.jpg 2x,
+                                    ../img/gallery/mob/slider2card1.jpg    1x
+                                "
+                                media="(max-width: 1199px)"
+                            />
+                            <source
+                                srcset="
+                                    ../img/gallery/desktop/slider2card1@2x.jpg 2x,
+                                    ../img/gallery/desktop/slider2card1.jpg    1x
+                                "
+                            />
+                            <img
+                                src="../img/gallery/mob/slider2card1.jpg"
+                                alt="Gallery image 2"
+                            />
+                        </picture>
+                        <picture>
+                            <source
+                                srcset="
+                                    ../img/gallery/mob/slider2card2@2x.jpg 2x,
+                                    ../img/gallery/mob/slider2card2.jpg    1x
+                                "
+                                media="(max-width: 1199px)"
+                            />
+                            <source
+                                srcset="
+                                    ../img/gallery/desktop/slider2card2@2x.jpg 2x,
+                                    ../img/gallery/desktop/slider2card2.jpg    1x
+                                "
+                            />
+                            <img
+                                src="../img/gallery/mob/slider2card2.jpg"
+                                alt="Gallery image 2"
+                            />
+                        </picture>
+                        <picture>
+                            <source
+                                srcset="
+                                    ../img/gallery/mob/slider2card3@2x.jpg 2x,
+                                    ../img/gallery/mob/slider2card3.jpg    1x
+                                "
+                                media="(max-width: 1199px)"
+                            />
+                            <source
+                                srcset="
+                                    ../img/gallery/desktop/slider2card3@2x.jpg 2x,
+                                    ../img/gallery/desktop/slider2card3.jpg    1x
+                                "
+                            />
+                            <img
+                                src="../img/gallery/mob/slider2card3.jpg"
+                                alt="Gallery image 2"
+                            />
+                        </picture>
                     </div>
-                </div>
-                <div class="footnote">
-                    <div class="footnote-light">
-                        <img
-                            src="../images/decktop/characters/light.png"
-                            alt=""
-                        />
+                </li>
+                <li class="swiper-slide">
+                    <div class="wrapper-picture">
+                        <picture>
+                            <source
+                                srcset="
+                                    ../img/gallery/mob/slider3car1@2x.jpg 2x,
+                                    ../img/gallery/mob/slider3car1.jpg    1x
+                                "
+                                media="(max-width: 1199px)"
+                            />
+                            <source
+                                srcset="
+                                    ../img/gallery/desktop/slider3card1@2x.jpg 2x,
+                                    ../img/gallery/desktop/slider3card1.jpg    1x
+                                "
+                            />
+                            <img
+                                src="../img/gallery/mob/slider3car1.jpg"
+                                alt="Gallery image 3"
+                            />
+                        </picture>
+                        <picture>
+                            <source
+                                srcset="
+                                    ../img/gallery/mob/slider3car2@2x.jpg 2x,
+                                    ../img/gallery/mob/slider3car2.jpg    1x
+                                "
+                                media="(max-width: 1199px)"
+                            />
+                            <source
+                                srcset="
+                                    ../img/gallery/desktop/slider3card2@2x.jpg 2x,
+                                    ../img/gallery/desktop/slider3card2.jpg    1x
+                                "
+                            />
+                            <img
+                                src="../img/gallery/mob/slider3car2.jpg"
+                                alt="Gallery image 3"
+                            />
+                        </picture>
+                        <picture>
+                            <source
+                                srcset="
+                                    ../img/gallery/mob/slider3car3@2x.jpg 2x,
+                                    ../img/gallery/mob/slider3car3.jpg    1x
+                                "
+                                media="(max-width: 1199px)"
+                            />
+                            <source
+                                srcset="
+                                    ../img/gallery/desktop/slider3card3@2x.jpg 2x,
+                                    ../img/gallery/desktop/slider3card3.jpg    1x
+                                "
+                            />
+                            <img
+                                src="../img/gallery/mob/slider3car3.jpg"
+                                alt="Gallery image 3"
+                            />
+                        </picture>
                     </div>
-                    <div class="footnote-car">
-                        <img
-                            src="../images/decktop/characters/car.png"
-                            alt=""
-                        />
+                </li>
+                <li class="swiper-slide">
+                    <div class="wrapper-picture">
+                        <picture>
+                            <source
+                                srcset="
+                                    ../img/gallery/mob/slider4car1@2x.jpg 2x,
+                                    ../img/gallery/mob/slider4car1.jpg    1x
+                                "
+                                media="(max-width: 1199px)"
+                            />
+                            <source
+                                srcset="
+                                    ../img/gallery/desktop/slider4card1@2x.jpg 2x,
+                                    ../img/gallery/desktop/slider4card1.jpg    1x
+                                "
+                            />
+                            <img
+                                src="../img/gallery/mob/slider4car1.jpg"
+                                alt="Gallery image 3"
+                            />
+                        </picture>
+                        <picture>
+                            <source
+                                srcset="
+                                    ../img/gallery/mob/slider4car2@2x.jpg 2x,
+                                    ../img/gallery/mob/slider4car2.jpg    1x
+                                "
+                                media="(max-width: 1199px)"
+                            />
+                            <source
+                                srcset="
+                                    ../img/gallery/desktop/slider4card2@2x.jpg 2x,
+                                    ../img/gallery/desktop/slider4card2.jpg    1x
+                                "
+                            />
+                            <img
+                                src="../img/gallery/mob/slider4car2.jpg"
+                                alt="Gallery image 3"
+                            />
+                        </picture>
+                        <picture>
+                            <source
+                                srcset="
+                                    ../img/gallery/mob/slider4car3@2x.jpg 2x,
+                                    ../img/gallery/mob/slider4car3.jpg    1x
+                                "
+                                media="(max-width: 1199px)"
+                            />
+                            <source
+                                srcset="
+                                    ../img/gallery/desktop/slider4card3@2x.jpg 2x,
+                                    ../img/gallery/desktop/slider4card3.jpg    1x
+                                "
+                            />
+                            <img
+                                src="../img/gallery/mob/slider4car3.jpg"
+                                alt="Gallery image 3"
+                            />
+                        </picture>
                     </div>
-                </div>
-            </li>
-            <!-- <li class="characters-items background-items-2">
-                <div class="characters-image">
-                    <img
-                        src="../images/decktop/characters/characterIronRod.png"
-                        alt=""
-                    />
-                </div>
-                <div class="characters-content">
-                    <h3 class="characters-title">Iron Rod</h3>
-                    <p class="characters-text">
-                        A heavy-hitting tank driver who values power over speed.
-                    </p>
-                </div>
-            </li>
-            <li class="characters-items background-items-1">
-                <div class="characters-image">
-                    <img
-                        src="../images/decktop/characters/characterSparks.png"
-                        alt=""
-                    />
-                </div>
-                <div class="characters-content">
-                    <h3 class="characters-title">Sparks</h3>
-                    <p class="characters-text">
-                        The tech-genius racer who uses gadgets and EMPs to
-                        disable enemy karts.
-                    </p>
-                </div>
-            </li>
-            <li class="characters-items background-items-1">
-                <div class="characters-image">
-                    <img
-                        src="../images/decktop/characters/charactersBlaze.png"
-                        alt=""
-                    />
-                </div>
-                <div class="characters-content">
-                    <h3 class="characters-title">Blaze</h3>
-                    <p class="characters-text">
-                        A rebel racer known for her precision strikes and
-                        devastating drift shots.
-                    </p>
-                </div>
-            </li> -->
-        </ul>
+                </li>
+                <li class="swiper-slide">
+                    <div class="wrapper-picture">
+                        <picture>
+                            <source
+                                srcset="
+                                    ../img/gallery/mob/slider5car1@2x.jpg 2x,
+                                    ../img/gallery/mob/slider5car1.jpg    1x
+                                "
+                                media="(max-width: 1199px)"
+                            />
+                            <source
+                                srcset="
+                                    ../img/gallery/desktop/slider5card1@2x.jpg 2x,
+                                    ../img/gallery/desktop/slider5card1.jpg    1x
+                                "
+                            />
+                            <img
+                                src="../img/gallery/mob/slider5car1.jpg"
+                                alt="Gallery image 3"
+                            />
+                        </picture>
+                        <picture>
+                            <source
+                                srcset="
+                                    ../img/gallery/mob/slider5car2@2x.jpg 2x,
+                                    ../img/gallery/mob/slider5car2.jpg    1x
+                                "
+                                media="(max-width: 1199px)"
+                            />
+                            <source
+                                srcset="
+                                    ../img/gallery/desktop/slider5card2@2x.jpg 2x,
+                                    ../img/gallery/desktop/slider5card2.jpg    1x
+                                "
+                            />
+                            <img
+                                src="../img/gallery/mob/slider5car2.jpg"
+                                alt="Gallery image 3"
+                            />
+                        </picture>
+                        <picture>
+                            <source
+                                srcset="
+                                    ../img/gallery/mob/slider5car3@2x.jpg 2x,
+                                    ../img/gallery/mob/slider5car3.jpg    1x
+                                "
+                                media="(max-width: 1199px)"
+                            />
+                            <source
+                                srcset="
+                                    ../img/gallery/desktop/slider5card3@2x.jpg 2x,
+                                    ../img/gallery/desktop/slider5card3.jpg    1x
+                                "
+                            />
+                            <img
+                                src="../img/gallery/mob/slider5car3.jpg"
+                                alt="Gallery image 3"
+                            />
+                        </picture>
+                    </div>
+                </li>
+                <li class="swiper-slide">
+                    <div class="wrapper-picture">
+                        <picture>
+                            <source
+                                srcset="
+                                    ../img/gallery/mob/slider6car1@2x.jpg 2x,
+                                    ../img/gallery/mob/slider6car1.jpg    1x
+                                "
+                                media="(max-width: 1199px)"
+                            />
+                            <source
+                                srcset="
+                                    ../img/gallery/desktop/slider6card1@2x.jpg 2x,
+                                    ../img/gallery/desktop/slider6card1.jpg    1x
+                                "
+                            />
+                            <img
+                                src="../img/gallery/mob/slider6car1.jpg"
+                                alt="Gallery image 3"
+                            />
+                        </picture>
+                        <picture>
+                            <source
+                                srcset="
+                                    ../img/gallery/mob/slider6car2@2x.jpg 2x,
+                                    ../img/gallery/mob/slider6car2.jpg    1x
+                                "
+                                media="(max-width: 1199px)"
+                            />
+                            <source
+                                srcset="
+                                    ../img/gallery/desktop/slider6card2@2x.jpg 2x,
+                                    ../img/gallery/desktop/slider6card2.jpg    1x
+                                "
+                            />
+                            <img
+                                src="../img/gallery/mob/slider6car2.jpg"
+                                alt="Gallery image 3"
+                            />
+                        </picture>
+                        <picture>
+                            <source
+                                srcset="
+                                    ../img/gallery/mob/slider6car3@2x.jpg 2x,
+                                    ../img/gallery/mob/slider6car3.jpg    1x
+                                "
+                                media="(max-width: 1199px)"
+                            />
+                            <source
+                                srcset="
+                                    ../img/gallery/desktop/slider6card3@2x.jpg 2x,
+                                    ../img/gallery/desktop/slider6card3.jpg    1x
+                                "
+                            />
+                            <img
+                                src="../img/gallery/mob/slider6car3.jpg"
+                                alt="Gallery image 3"
+                            />
+                        </picture>
+                    </div>
+                </li>
+                <li class="swiper-slide">
+                    <div class="wrapper-picture">
+                        <picture>
+                            <source
+                                srcset="
+                                    ../img/gallery/mob/slider7car1@2x.jpg 2x,
+                                    ../img/gallery/mob/slider7car1.jpg    1x
+                                "
+                                media="(max-width: 1199px)"
+                            />
+                            <source
+                                srcset="
+                                    ../img/gallery/desktop/slider7card1@2x.jpg 2x,
+                                    ../img/gallery/desktop/slider7card1.jpg    1x
+                                "
+                            />
+                            <img
+                                src="../img/gallery/mob/slider7car1.jpg"
+                                alt="Gallery image 3"
+                            />
+                        </picture>
+                        <picture>
+                            <source
+                                srcset="
+                                    ../img/gallery/mob/slider7car2@2x.jpg 2x,
+                                    ../img/gallery/mob/slider7car2.jpg    1x
+                                "
+                                media="(max-width: 1199px)"
+                            />
+                            <source
+                                srcset="
+                                    ../img/gallery/desktop/slider7card2@2x.jpg 2x,
+                                    ../img/gallery/desktop/slider7card2.jpg    1x
+                                "
+                            />
+                            <img
+                                src="../img/gallery/mob/slider7car2.jpg"
+                                alt="Gallery image 3"
+                            />
+                        </picture>
+                        <picture>
+                            <source
+                                srcset="
+                                    ../img/gallery/mob/slider7car3@2x.jpg 2x,
+                                    ../img/gallery/mob/slider7car3.jpg    1x
+                                "
+                                media="(max-width: 1199px)"
+                            />
+                            <source
+                                srcset="
+                                    ../img/gallery/desktop/slider7card3@2x.jpg 2x,
+                                    ../img/gallery/desktop/slider7card3.jpg    1x
+                                "
+                            />
+                            <img
+                                src="../img/gallery/mob/slider7car3.jpg"
+                                alt="Gallery image 3"
+                            />
+                        </picture>
+                    </div>
+                </li>
+            </ul>
+
+            <div class="gallery-buttons">
+                <button
+                    class="gallery-btn-prev"
+                    disabled
+                    aria-label="Previous slide"
+                    type="button"
+                ></button>
+                <button
+                    class="gallery-btn-next"
+                    aria-label="Next slide"
+                    type="button"
+                ></button>
+            </div>
+        </div>
     </div>
 </section>
 
-            
-            
+
+            <section id="reviews" class="section reviews-section">
+    <div class="container">
+        <h2 class="section-title section-title-reviews">Reviews</h2>
+        <div class="swiper reviews-swiper">
+            <ul class="swiper-wrapper reviews-list">
+                <li class="swiper-slide reviews-items">
+                    <p class="reviews-text">
+                        Karts Battle is insane in the best way! Explosions,
+                        drifts, and chaos — it’s everything I want in a racing
+                        game.
+                    </p>
+                    <hr class="decor-line" />
+                    <div class="review-author">
+                        <img src="../img/reviews/photoChris.png" alt="Chris" />
+                        <p>Chris R.</p>
+                    </div>
+                    <div class="some-decor">
+                        <div class="decor-reviews">
+                            <img
+                                src="../img/reviews/rectanglebl.png"
+                                alt="rectang"
+                            />
+                        </div>
+                        <div class="decor-reviews-1">
+                            <img
+                                src="../img/reviews/rectanglebl.png"
+                                alt="rectang"
+                            />
+                        </div>
+                    </div>
+                </li>
+                <li class="swiper-slide reviews-items">
+                    <p class="reviews-text">
+                        I didn’t think kart racing could get this intense. Feels
+                        like Mario Kart met Mad Max!
+                    </p>
+                    <hr class="decor-line" />
+                    <div class="review-author">
+                        <img src="../img/reviews/alex.png" alt="Alex" />
+                        <p>Alex M.</p>
+                    </div>
+                    <div class="some-decor">
+                        <div class="decor-reviews">
+                            <img
+                                src="../img/reviews/rectanglebl.png"
+                                alt="rectang"
+                            />
+                        </div>
+                        <div class="decor-reviews-1">
+                            <img
+                                src="../img/reviews/rectanglebl.png"
+                                alt="rectang"
+                            />
+                        </div>
+                    </div>
+                </li>
+                <li class="swiper-slide reviews-items">
+                    <p class="reviews-text">
+                        The customization is top-tier. I’ve got the coolest kart
+                        ever and it actually performs well.
+                    </p>
+                    <hr class="decor-line" />
+                    <div class="review-author">
+                        <img src="../img/reviews/jessie.png" alt="Jessie" />
+                        <p>Jessie L.</p>
+                    </div>
+                    <div class="some-decor">
+                        <div class="decor-reviews">
+                            <img
+                                src="../img/reviews/rectanglebl.png"
+                                alt="rectang"
+                            />
+                        </div>
+                        <div class="decor-reviews-1">
+                            <img
+                                src="../img/reviews/rectanglebl.png"
+                                alt="rectang"
+                            />
+                        </div>
+                    </div>
+                </li>
+                <li class="swiper-slide reviews-items">
+                    <p class="reviews-text">
+                        Great game for short adrenaline bursts. Perfect when I
+                        want something fun and fast-paced.
+                    </p>
+                    <hr class="decor-line" />
+                    <div class="review-author">
+                        <img src="../img/reviews/diego.png" alt="Diego" />
+                        <p>Diego F.</p>
+                    </div>
+                    <div class="some-decor">
+                        <div class="decor-reviews">
+                            <img
+                                src="../img/reviews/rectanglebl.png"
+                                alt="rectang"
+                            />
+                        </div>
+                        <div class="decor-reviews-1">
+                            <img
+                                src="../img/reviews/rectanglebl.png"
+                                alt="rectang"
+                            />
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <div class="button-wrapper">
+                <button
+                    class="left-rev-btn"
+                    type="button"
+                    aria-label="Previous review"
+                ></button>
+                <button
+                    class="right-rev-btn"
+                    type="button"
+                    aria-label="Next review"
+                ></button>
+            </div>
+        </div>
+    </div>
+</section>
+
         </main>
 
         <footer class="footer section">
