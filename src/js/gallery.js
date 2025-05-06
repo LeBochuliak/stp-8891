@@ -6,7 +6,7 @@ const nextBtn = document.querySelector('.gallery-btn-next');
 
 const gallerySwiper = new Swiper('.gallery-swiper', {
   slidesPerView: 1,
-  spaceBetween: 20,
+  spaceBetween: 0,
   speed: 800,
   on: {
     slideChange: function () {

@@ -7,7 +7,7 @@ new Swiper('.reviews-swiper', {
   modules: [Navigation],
   slidesPerView: 1,
   slidesPerGroup: 1,
-  spaceBetween: 20,
+  spaceBetween: 0,
   navigation: {
     nextEl: '.right-rev-btn',
     prevEl: '.left-rev-btn',

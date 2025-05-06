@@ -1,0 +1,265 @@
+.swiper,
+.swiper-wrapper,
+.swiper-slide {
+    height: auto !important;
+    overflow: visible !important;
+}
+.characters-slider {
+    position: relative;
+    overflow: hidden;
+}
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+}
+.container-characters {
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 32px;
+    border: 1px solid #393939;
+    background-color: #84eafa;
+    width: 288px;
+    padding: 9px 0 24px;
+    position: relative;
+}
+.characters-list {
+    display: flex;
+}
+.characters-items {
+    position: relative;
+    width: 180px;
+    left: 25px;
+    padding: 36px 12px;
+}
+.background-items-1 {
+    background: url(/img/main-characters/subtractmoborang.png) no-repeat;
+}
+.background-items-2 {
+    background: url(/img/main-characters/subtractmobyellow.png) no-repeat;
+}
+.background-items-3 {
+    background: url(/img/main-characters/subtractmobblue.png) no-repeat;
+}
+.background-items-4 {
+    background: url(/img/main-characters/subtractmobred.png) no-repeat;
+}
+.characters-items::before {
+    content: '';
+    position: absolute;
+    right: 120px;
+    bottom: -5px;
+    width: 50px;
+    height: 50px;
+    background: url(/img/main-characters/circlemob.png) no-repeat center;
+    background-size: contain;
+    z-index: 2;
+}
+.characters-image {
+    margin: -70px 0 12px;
+}
+.characters-content {
+    width: 156px;
+}
+.characters-title {
+    color: #1d1d1d;
+    font-family: 'Coiny';
+    font-size: 16px;
+    line-height: 100%;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+.characters-text {
+    color: #1d1d1d;
+    font-family: 'Open Sans';
+    font-size: 14px;
+    line-height: 120%;
+}
+
+.footnote {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.footnote-light {
+    position: absolute;
+    bottom: 10px;
+    right: -7px;
+    width: 93px;
+    height: 187px;
+}
+
+.img-mobile {
+    display: block;
+}
+
+.img-desktop {
+    display: none;
+}
+
+.footnote-car {
+    position: absolute;
+    bottom: 150px;
+    right: -55px;
+    width: 85px;
+    height: 90px;
+}
+
+.characters-controls {
+    position: relative;
+    margin-top: 20px;
+    width: 286px;
+    pointer-events: none; /* Щоб кліки не блокувались */
+}
+
+.left-rev-button {
+    pointer-events: all; /* Дозволяє натискати на кнопки */
+    background-color: transparent;
+    border: none;
+    width: 24px;
+    height: 24px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    cursor: pointer;
+    transform: rotateY(180deg);
+}
+
+.right-rev-button {
+    pointer-events: all; /* Дозволяє натискати на кнопки */
+    background-color: transparent;
+    border: none;
+    width: 24px;
+    height: 24px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    cursor: pointer;
+}
+
+.left-rev-button {
+    background-image: url(/img/main-characters/arrow.svg);
+}
+
+.right-rev-button {
+    background-image: url(/img/main-characters/arrow.svg);
+}
+
+.left-rev-button:disabled,
+.right-rev-button:disabled {
+    opacity: 0.5;
+    cursor: default;
+}
+
+@media screen and (min-width: 1200px) {
+    .container-characters {
+        border-radius: 48px;
+        width: 1120px;
+        padding: 40px 0 40px;
+    }
+
+    .section-title-characters {
+        display: block;
+        margin-bottom: 206px;
+    }
+
+    .characters-list {
+        padding-left: 371px;
+        display: flex;
+    }
+    .characters-items {
+        margin: 0 auto;
+        position: relative;
+        width: 376px;
+        left: 25px;
+        padding: 29px 26px;
+    }
+
+    .characters-image {
+        margin: -70px -50px 12px;
+        margin-top: -193px;
+        margin-bottom: 60px;
+    }
+
+    .background-items-1 {
+        background: url(/img/main-characters/subtractdectoporang.png) no-repeat;
+    }
+
+    .background-items-2 {
+        background: url(/img/main-characters/subtractdectopyellow.png) no-repeat;
+    }
+
+    .background-items-3 {
+        background: url(/img/main-characters/subtractdectoblue.png) no-repeat;
+    }
+    .background-items-4 {
+        background: url(/img/main-characters/subtractdectopred.png) no-repeat;
+    }
+
+    .characters-content {
+        width: 238px;
+    }
+
+    .characters-items::before {
+        content: '';
+        position: absolute;
+        left: 265px;
+        top: 387px;
+        width: 150px;
+        height: 150px;
+        background: url(/img/main-characters/circlemob.png) no-repeat center;
+        z-index: 2;
+    }
+
+    .characters-title {
+        font-size: 24px;
+        margin-bottom: 16px;
+    }
+
+    .characters-text {
+        font-size: 20px;
+        line-height: 140%;
+    }
+
+    .footnote {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        pointer-events: none;
+    }
+
+    .footnote-light {
+        position: relative;
+        top: -518px;
+        left: 764px;
+        width: 359px;
+        height: 463px;
+    }
+    .footnote-car {
+        position: relative;
+        right: -965px;
+        bottom: 1208px;
+        width: 343px;
+        height: 366px;
+    }
+    .img-mobile {
+        display: none;
+    }
+
+    .img-desktop {
+        display: block;
+    }
+
+    .left-rev-button {
+        width: 48px;
+        height: 48px;
+    }
+
+    .right-rev-button {
+        width: 48px;
+        height: 48px;
+    }
+}
