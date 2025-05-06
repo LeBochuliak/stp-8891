@@ -4,9 +4,10 @@
     background-image: url(/img/benefits/today-is.png),
         url(/img/benefits/tire-traces-right.png), url(/img/benefits/car.png),
         url(/img/benefits/tire-traces.png), url(/img/benefits/texture.png);
-    background-size: 320px 284px, auto, 80px 68px, auto, 320px 828px;
+    background-size: 320px 284px, 311px 206px, 80px 68px, 313px 209px,
+        320px 828px;
     background-repeat: no-repeat;
-    background-position: 50% 50%, 700% -5%, 98% 99%, -220% 99%, 50% 55%;
+    background-position: 50% 50%, 300% -2%, 98% 99%, -220% 99%, 50% 55%;
     @include media(retina-mobile) {
         background-image: url(/img/benefits/today-is@2x.png),
             url(/img/benefits/tire-traces-right@2x.png),
@@ -21,7 +22,8 @@
             url(/img/benefits/tire-traces-right-desktop.png),
             url(/img/benefits/car-desktop.png),
             url(/img/benefits/tire-traces-desktop.png);
-        background-size: 566px 460px, auto, auto, 240px 204px, auto;
+        background-size: 566px 460px, 1200px 360px, 930px 553px, 240px 204px,
+            1174px 651px;
         background-position: 50% 45.5%, 50% 50%, 130% -10%, 97% 100%, -440% 96%;
     }
     @include media(retina-desktop) {
