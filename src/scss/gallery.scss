@@ -1,6 +1,11 @@
 .swiper {
     overflow: visible !important;
 }
+
+.swiper-slider {
+    position: relative;
+    overflow: hidden;
+}
 .gallery-section {
     background: url(/img/gallery/ellipsescope.png) -9px 48px/275px 278px no-repeat;
 }
@@ -8,36 +13,55 @@
     display: flex;
     gap: 8px;
 }
-
+.wrapper-picture img {
+    border-radius: 16px;
+}
 .gallery-list {
-    margin-left: 30px;
+    // margin-left: 30px;
     margin-bottom: 16px;
 }
 
 .gallery-buttons {
+    transform: translateY(-50%);
     display: flex;
-    flex-direction: row;
+    width: 100%;
+    pointer-events: none;
     justify-content: flex-end;
 }
 
 .gallery-btn-prev {
+    pointer-events: all; /* Дозволяє натискати на кнопки */
+    background-color: transparent;
     border: none;
     width: 24px;
     height: 24px;
-    background-color: transparent;
-    cursor: pointer;
-    background-image: url(/img/gallery/arrow.png);
     background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    cursor: pointer;
     transform: rotateY(180deg);
 }
 .gallery-btn-next {
+    pointer-events: all; /* Дозволяє натискати на кнопки */
+    background-color: transparent;
     border: none;
     width: 24px;
     height: 24px;
-    background-color: transparent;
-    cursor: pointer;
-    background-image: url(/img/gallery/arrow.png);
     background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    cursor: pointer;
+}
+
+.gallery-btn-prev,
+.gallery-btn-next {
+    background-image: url(../img/gallery/arrow.png);
+}
+
+.gallery-btn-prev:disabled,
+.gallery-btn-next:disabled {
+    opacity: 0.5;
+    cursor: default;
 }
 
 @media screen and (min-width: 1200px) {
@@ -47,7 +71,13 @@
     }
 
     .gallery-list {
-        margin-left: 151px;
+        margin-left: 244px;
+    }
+
+    .gallery-buttons {
+        position: relative;
+        left: -29px;
+        bottom: -20px;
     }
     .gallery-btn-prev,
     .gallery-btn-next {
