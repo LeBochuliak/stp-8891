@@ -1,3 +1,9 @@
+.terms-section {
+    padding: 22px 16px 0;
+    @include media(desktop) {
+        padding: 40px 40px 0;
+    }
+}
 .back-link {
     font-family: 'Open Sans', sans-serif;
     font-weight: 600;
@@ -8,6 +14,10 @@
     align-items: center;
     gap: 11px;
     margin-bottom: 16px;
+}
+.back-icon {
+    width: 7px;
+    height: 13px;
 }
 .back-link:hover,
 .back-link:focus,
@@ -22,10 +32,9 @@
     fill: #da8c00;
 }
 .terms-title {
-    margin-bottom: 0;
+    margin-bottom: 24px;
     text-align: left;
     @include media(desktop) {
-        margin-bottom: 26px;
         margin-top: 16px;
     }
 }
@@ -76,6 +85,9 @@
     @include media(desktop) {
         font-size: 20px;
     }
+}
+.privacy-text:last-child {
+    margin-bottom: 0;
 }
 .privacy-text-list {
     font-family: 'Open Sans', sans-serif;

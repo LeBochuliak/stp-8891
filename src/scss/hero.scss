@@ -1,28 +1,34 @@
-.hero {
+.hero-wrapper {
+    width: 320px;
     margin: 0 auto;
-    background-image: url(/img/hero/ellipse.png), url(/img/hero/background.png);
-    background-repeat: no-repeat;
-    background-position: -6% 140%, 2% 99%;
-    background-size: 216px, 320px 220px;
-    padding: 54px 20px 48px;
     position: relative;
-    @include media(retina-mobile) {
-        background-image: url(/img/hero/ellipse@2x.png),
-            url(/img/hero/background@2x.png);
-    }
     @include media(desktop) {
-        background-image: url(/img/hero/ellipse-desktop.png),
-            url(/img/hero/background-desktop.png);
-        background-position: 0% 40%, 50% 100%;
-        background-size: 565px 570px, 1200px 780px;
-        padding: 266px 112px 288px;
-    }
-    @include media(retina-desktop) {
-        background-image: url(/img/hero/ellipse-desktop@2x.png),
-            url(/img/hero/background-desktop@2x.png);
+        width: 1200px;
     }
 }
-.hero::after {
+.hero {
+    margin: 0 auto;
+    overflow: hidden;
+    background-image: url(/img/hero/background.png);
+    background-repeat: no-repeat;
+    background-position: 50% 100%;
+    background-size: 320px 220px;
+    padding: 57px 20px 48px;
+    position: relative;
+    @include media(retina-mobile) {
+        background-image: url(/img/hero/background@2x.png);
+    }
+    @include media(desktop) {
+        background-image: url(/img/hero/background-desktop.png);
+        background-position: 50% 0%;
+        background-size: 1200px 780px;
+        padding: 282px 112px 288px;
+    }
+    @include media(retina-desktop) {
+        background-image: url(/img/hero/background-desktop@2x.png);
+    }
+}
+.hero-arrow {
     content: '';
     position: absolute;
     background-image: url(/img/hero/arrow.png);
@@ -32,6 +38,7 @@
     height: 44px;
     bottom: -22px;
     left: 138px;
+    z-index: 1;
     @include media(retina-mobile) {
         background-image: url(/img/hero/arrow@2x.png);
     }
@@ -50,12 +57,57 @@
     padding: 0;
 }
 .hero-wrap {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     width: 165px;
+    position: relative;
+    z-index: 1;
     @include media(desktop) {
         width: 340px;
+    }
+}
+.hero-ellipse {
+    content: '';
+    position: absolute;
+    background-image: url(/img/hero/ellipse.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 0% 100%;
+    width: 212px;
+    height: 212px;
+    z-index: -1;
+    left: -20px;
+    top: -49px;
+
+    @include media(retina-mobile) {
+        background-image: url(/img/hero/ellipse@2x.png);
+    }
+    @include media(desktop) {
+        background-image: url(/img/hero/ellipse-desktop.png);
+        background-size: 100%;
+        background-position: 50% 50%;
+        width: 564px;
+        height: 569px;
+        top: 0%;
+        left: 60%;
+        /*top: -180px;
+        left: -110px;*/
+        transform: translateY(-200%);
+    }
+    @include media(retina-desktop) {
+        background-image: url(/img/hero/ellipse-desktop@2x.png);
+    }
+}
+.hero-blur-circle {
+    @include media(desktop) {
+        content: '';
+        position: absolute;
+        top: 18%;
+        left: 57%;
+        width: 383px;
+        height: 383px;
+        border-radius: 50%;
+        backdrop-filter: blur(20px);
+        z-index: -1;
+        transform: translateY(-200%);
     }
 }
 .hero-title {
@@ -71,6 +123,24 @@
         text-transform: none;
     }
 }
+.animated-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include media(desktop) {
+        transform: translateY(500%);
+    }
+}
+
+@keyframes moveTitle {
+    0% {
+        transform: translateY(500%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
 .hero-title-span::after {
     @include media(desktop) {
         content: '\A';
@@ -133,4 +203,80 @@
 }
 .hero-button:active::after {
     background-color: #f4eb74;
+}
+
+.cookies-hidden-hero-blur {
+    @include media(desktop) {
+        animation: moveSightBlur 5s ease-in-out forwards;
+    }
+}
+.cookies-hidden-hero {
+    @include media(desktop) {
+        animation: moveSight 5s ease-in-out forwards;
+    }
+}
+.cookies-hidden-hero-title {
+    @include media(desktop) {
+        animation: moveTitle 0.5s ease-in-out forwards;
+        animation-delay: 4.8s;
+    }
+}
+
+@keyframes moveSightBlur {
+    0% {
+        transform: translate(26%, -166%);
+        animation-delay: 1s;
+    }
+    20% {
+        transform: translate(26%, -30%);
+        animation-delay: 0.5s;
+    }
+    35% {
+        transform: translate(122%, -30%);
+        animation-delay: 0.5s;
+    }
+    50% {
+        transform: translate(122%, -75%);
+        animation-delay: 0.5s;
+    }
+    65% {
+        transform: translate(122%, 7%);
+        animation-delay: 0.5s;
+    }
+    80% {
+        transform: translate(122%, -30%);
+        animation-delay: 0.5s;
+    }
+    100% {
+        transform: translate(-56%, -30%);
+    }
+}
+@keyframes moveSight {
+    0% {
+        transform: translate(0, -120%);
+        animation-delay: 1s;
+    }
+    20% {
+        transform: translate(0, -30%);
+        animation-delay: 0.5s;
+    }
+    35% {
+        transform: translate(65%, -30%);
+        animation-delay: 0.5s;
+    }
+    50% {
+        transform: translate(65%, -60%);
+        animation-delay: 0.5s;
+    }
+    65% {
+        transform: translate(65%, -5%);
+        animation-delay: 0.5s;
+    }
+    80% {
+        transform: translate(65%, -30%);
+        animation-delay: 0.5s;
+    }
+    100% {
+        transform: translate(-56%, -30%);
+    }
 }

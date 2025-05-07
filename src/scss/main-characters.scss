@@ -31,6 +31,8 @@
     width: 180px;
     left: 25px;
     padding: 36px 12px;
+    display: flex;
+    flex-direction: column;
 }
 .background-items-1 {
     background: url(/img/main-characters/subtractmoborang.png) no-repeat;
