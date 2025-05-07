@@ -14,8 +14,8 @@ function updateButtons(swiper) {
 const swiper = new Swiper('.reviews-swiper', {
   modules: [Navigation],
   slidesPerView: 1,
-  slidesPerGroup: 1,
-  spaceBetween: 0,
+  // slidesPerGroup: 1,
+  spaceBetween: 70,
   navigation: {
     nextEl: '.right-rev-btn',
     prevEl: '.left-rev-btn',

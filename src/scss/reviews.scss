@@ -1,5 +1,10 @@
+.swiper {
+    overflow: visible !important;
+}
+
 .rev-sec {
     position: relative;
+    overflow: hidden;
 }
 
 .sec-bg {
@@ -14,9 +19,6 @@
     mix-blend-mode: soft-light;
 }
 
-.swiper {
-    overflow: visible !important;
-}
 .reviews-swiper {
     position: relative;
     margin: 0 auto;
@@ -96,34 +98,48 @@
     line-height: 120%;
 }
 
-.swiper-button-prev,
-.swiper-button-next {
-    display: none;
-}
 .button-wrapper {
+    position: relative;
+    left: 1px;
+    bottom: -5px;
     display: flex;
-    flex-direction: row;
+    width: 100%;
+    pointer-events: none;
     justify-content: flex-end;
 }
 
 .left-rev-btn {
+    pointer-events: all; /* Дозволяє натискати на кнопки */
+    background-color: transparent;
     border: none;
     width: 24px;
     height: 24px;
-    background-color: transparent;
-    cursor: pointer;
-    background-image: url(/img/reviews/arrowfeft.svg);
     background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    cursor: pointer;
+    transform: rotateY(180deg);
 }
 
 .right-rev-btn {
+    pointer-events: all; /* Дозволяє натискати на кнопки */
+    background-color: transparent;
     border: none;
     width: 24px;
     height: 24px;
-    background-color: transparent;
-    cursor: pointer;
-    background-image: url(/img/reviews/arrow.svg);
     background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    cursor: pointer;
+}
+.right-rev-btn,
+.left-rev-btn {
+    background-image: url(/img/reviews/arrow.png);
+}
+.right-rev-btn:disabled,
+.left-rev-btn:disabled {
+    opacity: 0.5;
+    cursor: default;
 }
 
 @media screen and (min-width: 1200px) {
@@ -169,16 +185,10 @@
     }
 
     .button-wrapper {
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
+        left: -18px;
     }
 
-    .left-rev-btn {
-        width: 48px;
-        height: 48px;
-    }
-
+    .left-rev-btn,
     .right-rev-btn {
         width: 48px;
         height: 48px;
