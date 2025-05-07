@@ -2,7 +2,7 @@
     overflow: visible !important;
 }
 .gallery-section {
-    background: url(../img/gallery/ellipsescope.png) -9px 48px/275px 278px no-repeat;
+    background: url(/img/gallery/ellipsescope.png) -9px 48px/275px 278px no-repeat;
 }
 .wrapper-picture {
     display: flex;
@@ -26,7 +26,7 @@
     height: 24px;
     background-color: transparent;
     cursor: pointer;
-    background-image: url(../img/gallery/arrow.png);
+    background-image: url(/img/gallery/arrow.png);
     background-repeat: no-repeat;
     transform: rotateY(180deg);
 }
@@ -36,13 +36,13 @@
     height: 24px;
     background-color: transparent;
     cursor: pointer;
-    background-image: url(../img/gallery/arrow.png);
+    background-image: url(/img/gallery/arrow.png);
     background-repeat: no-repeat;
 }
 
 @media screen and (min-width: 1200px) {
     .gallery-section {
-        background: url(../img/gallery/ellipsescopedeskt.png) center/911px 911px
+        background: url(/img/gallery/ellipsescopedeskt.png) center/911px 911px
             no-repeat;
     }
 
