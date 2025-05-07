@@ -111,10 +111,29 @@
 }
 
 .characters-controls {
-    position: relative;
-    margin-top: 20px;
-    width: 286px;
-    pointer-events: none; /* Щоб кліки не блокувались */
+    position: absolute;
+    top: 60%;
+    left: -29px;
+    right: 0;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 29px;
+    pointer-events: none;
+    z-index: 10;
+}
+
+.right-rev-button {
+    pointer-events: all; /* Дозволяє натискати на кнопки */
+    background-color: transparent;
+    border: none;
+    width: 24px;
+    height: 24px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    cursor: pointer;
 }
 
 .left-rev-button {
@@ -128,18 +147,6 @@
     background-size: contain;
     cursor: pointer;
     transform: rotateY(180deg);
-}
-
-.right-rev-button {
-    pointer-events: all; /* Дозволяє натискати на кнопки */
-    background-color: transparent;
-    border: none;
-    width: 24px;
-    height: 24px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    cursor: pointer;
 }
 
 .left-rev-button {
@@ -256,12 +263,14 @@
         display: block;
     }
 
-    .left-rev-button {
-        width: 48px;
-        height: 48px;
+    .characters-controls {
+        top: 68%;
+        left: 24px;
+        padding: 0 306px;
     }
 
-    .right-rev-button {
+    .right-rev-button,
+    .left-rev-button {
         width: 48px;
         height: 48px;
     }
