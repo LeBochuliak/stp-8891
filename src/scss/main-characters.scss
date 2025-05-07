@@ -3,6 +3,7 @@
 .swiper-slide {
     height: auto !important;
     overflow: visible !important;
+    box-sizing: border-box !important;
 }
 .characters-slider {
     position: relative;
