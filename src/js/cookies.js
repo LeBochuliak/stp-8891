@@ -6,21 +6,33 @@ const cookies = document.querySelector('[data-cookies]');
 const body = document.body;
 const cookiesDecision = localStorage.getItem('cookiesConsent');
 
-const heroBlur = document.querySelector('.hero-blur-circle');
-const heroEllipse = document.querySelector('.hero-ellipse');
-const heroTitle = document.querySelector('.animated-container ');
-const header = document.querySelector('.header');
+const heroBlur = document.querySelector('[data-blur-ellipse]');
+const heroEllipse = document.querySelector('[data-ellipse]');
+const heroTitle = document.querySelector('[data-animated-hero-title]');
+const header = document.querySelector('[data-header]');
 
 if (!cookiesDecision) {
     cookies.classList.add('show');
     body.classList.add('no-scroll');
-} else if (cookiesDecision === 'accepted' || choice === 'declined') {
+    createCookiesOverlay();
+} else if (cookiesDecision === 'accepted' || cookiesDecision === 'declined') {
+    header.classList.add('z-index-header');
     animateHeroElements();
+}
+
+function createCookiesOverlay() {
+    const overlay = document.createElement('div');
+    overlay.classList.add('cookies-overlay');
+    document.body.appendChild(overlay);
 }
 
 function cookiesChoice(choice) {
     localStorage.setItem('cookiesConsent', choice);
     body.classList.remove('no-scroll');
+    header.classList.add('z-index-header');
+
+    const overlay = document.querySelector('.cookies-overlay');
+    if (overlay) overlay.remove();
 
     if (choice === 'accepted' || choice === 'declined') {
         animateHeroElements();
@@ -39,3 +51,5 @@ function animateHeroElements() {
 
 cookiesBtnAccept.addEventListener('click', () => cookiesChoice('accepted'));
 cookiesBtnDecline.addEventListener('click', () => cookiesChoice('declined'));
+
+document.addEventListener('click', stopHeroAnimation);

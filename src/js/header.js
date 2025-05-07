@@ -51,12 +51,28 @@ document.addEventListener('DOMContentLoaded', () => {
     function scrollToSection(sectionId) {
         const section = document.getElementById(sectionId);
         const isDesktop = window.innerWidth >= 1200;
-        const offset = isDesktop ? 96 : 50;
-        const offsetInner = isDesktop ? 14 : 0;
+        const offsetBenefits = isDesktop ? 20 : 0;
+        const offsetGame = isDesktop ? 96 : 30;
+        const offsetGallery = isDesktop ? 68 : 20;
+        const offsetInner = isDesktop ? 20 : 16;
 
         if (sectionId === 'game-description') {
             const offsetTop =
-                section.getBoundingClientRect().top + window.scrollY - offset;
+                section.getBoundingClientRect().top +
+                window.scrollY -
+                offsetGame;
+            window.scrollTo({ top: offsetTop, behavior: 'smooth' });
+        } else if (sectionId === 'benefits') {
+            const offsetTop =
+                section.getBoundingClientRect().top +
+                window.scrollY -
+                offsetBenefits;
+            window.scrollTo({ top: offsetTop, behavior: 'smooth' });
+        } else if (sectionId === 'gallery' || sectionId === 'reviews') {
+            const offsetTop =
+                section.getBoundingClientRect().top +
+                window.scrollY -
+                offsetGallery;
             window.scrollTo({ top: offsetTop, behavior: 'smooth' });
         } else {
             const offsetTop =
