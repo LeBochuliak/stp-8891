@@ -13,12 +13,18 @@
     max-width: 288px;
     height: 32px;
     @include media(desktop) {
+        transform: translateY(-200%);
         border-radius: 32px;
         padding: 16px;
         max-width: 1120px;
         height: 92px;
     }
 }
+.cookies-hidden-header {
+    animation: moveHeader 1s ease-in-out forwards;
+    animation-delay: 4.7s;
+}
+
 .header-container {
     display: flex;
     align-items: center;
@@ -140,4 +146,13 @@
 }
 .mobile-menu-nav-item:active {
     color: #eaa62c;
+}
+
+@keyframes moveHeader {
+    0% {
+        transform: translateY(-200%);
+    }
+    100% {
+        transform: translateY(0);
+    }
 }
