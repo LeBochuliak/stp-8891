@@ -9,14 +9,14 @@
 .hero {
     margin: 0 auto;
     overflow: hidden;
-    background-image: url(/img/hero/background.png);
+    background-image: url(/img/hero/background.webp);
     background-repeat: no-repeat;
     background-position: 50% 100%;
     background-size: 320px 220px;
     padding: 57px 20px 48px;
     position: relative;
     @include media(retina-mobile) {
-        background-image: url(/img/hero/background@2x.png);
+        background-image: url(/img/hero/background@2x.webp);
     }
     @include media(desktop) {
         background-image: url(/img/hero/background-desktop.webp);
