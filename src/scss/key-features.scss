@@ -1,7 +1,5 @@
 .features-wrapper {
     padding: 40px 0;
-
-       
 }
 
 .features-cards {
@@ -254,7 +252,6 @@
         margin-bottom: 40px;
         border-radius: 24px;
 
-
         background: url(/img/key-feature/subtract.png) no-repeat;
 
         background-size: cover;
@@ -273,10 +270,7 @@
         min-height: 342px;
         background-color: #5c3e3e;
 
-       
-
         background-image: url(/img/key-feature/emp.png),
-
             url(/images/mobile/key-features/objects.png),
             url(/images/mobile/key-features/object.png);
         background-position: 580px 25px, 47px 150px, 257px 261px;
@@ -290,9 +284,6 @@
         left: 12px;
         width: 72px;
         height: 72px;
-
-      
-         
 
         background: url(/img/key-feature/arrowdecor.svg) no-repeat center;
 
@@ -318,9 +309,6 @@
         left: 605px;
         width: 140px;
         height: 140px;
-
-       
-        
 
         background: url(/img/key-feature/maskWeapon.png) no-repeat center;
 
@@ -348,7 +336,6 @@
         left: 38px;
         width: 760px;
         height: 367px;
-
 
         background: url(/img/key-feature/arena.png) no-repeat center;
 
@@ -383,8 +370,6 @@
         width: 459px;
         height: 341.44px;
 
-      
-
         background: url(/img/key-feature/car.png) no-repeat center;
 
         background-size: contain;
@@ -397,8 +382,6 @@
         left: 402px;
         width: 363px;
         height: 342px;
-
-       
 
         background: url(/img/key-feature/nitrocar.png) no-repeat center;
 
@@ -495,39 +478,76 @@
         display: flex;
         order: 2;
         overflow: visible;
-        max-width: 760px;
-        min-height: 342px;
-        background-image: url(/img/key-feature/starBig.png),
-            url(/img/key-feature/bigst.png);
-        background-position: 231px 4px, -30px 32px;
-        background-size: 104px 110px, 150px 160px;
-        background-repeat: no-repeat;
         left: 80px;
         top: 6px;
+        background: none;
     }
 
     .mask-card::before {
         content: '';
         position: absolute;
-        top: 90px;
-        left: 52px;
-        width: 267px;
+        top: -7px;
+        left: 200px;
+        width: 135px;
+        height: 135px;
+        background: url(/img/key-feature/starBig.png) no-repeat center;
+        background-size: contain;
+        z-index: 1;
+    }
+
+    .mask-card::after {
+        content: '';
+        position: absolute;
+        top: -35px;
+        left: -121px;
+        width: 222px;
+        height: 223px;
+        background: url(/img/key-feature/bigst.png) no-repeat center;
+        background-size: contain;
+        z-index: 1;
+    }
+    .mask-icon {
+        position: relative;
+        width: 266px;
         height: 265px;
-        background: url(/img/key-feature/maskOffline.png) no-repeat center;
+        bottom: -74px;
+    }
+
+    .wrapper-mask {
+        position: relative;
+    }
+
+    .wrapper-mask::before {
+        content: '';
+        position: absolute;
+        top: -4px;
+        left: 555px;
+        width: 135px;
+        height: 135px;
+        background: url(/img/key-feature/boxBig.png) no-repeat center;
+        background-size: contain;
+        z-index: 1;
+    }
+    .wrapper-mask::after {
+        content: '';
+        position: absolute;
+        top: 56px;
+        right: 598px;
+        width: 111px;
+        height: 110px;
+        background: url(/img/key-feature/boxBig.png) no-repeat center;
         background-size: contain;
         z-index: 1;
     }
 
     .weapon-card,
-    .maskWeapon-card,
     .house-card,
     .yard-card,
     .nitro-card,
     .car-card,
     .nitrocar-icon,
     .wrapper-nitro,
-    .nitro-icon,
-    .mask-icon {
+    .nitro-icon {
         display: none;
     }
 }
