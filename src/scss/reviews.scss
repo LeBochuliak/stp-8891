@@ -4,9 +4,10 @@
 
 .rev-sec {
     position: relative;
+}
+.wrapper-bg {
     overflow: hidden;
 }
-
 .sec-bg {
     position: absolute;
     top: -378px;
@@ -17,14 +18,6 @@
     background-image: url(/img/reviews/mobbg.png);
     background-repeat: no-repeat;
     mix-blend-mode: soft-light;
-}
-
-.reviews-swiper {
-    position: relative;
-    margin: 0 auto;
-}
-.reviews-wrapper .swiper {
-    overflow: hidden;
 }
 
 .swiper-wrapper {
@@ -101,7 +94,6 @@
 .button-wrapper {
     position: relative;
     left: 1px;
-    bottom: -5px;
     display: flex;
     width: 100%;
     pointer-events: none;
