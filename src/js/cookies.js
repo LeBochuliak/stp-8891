@@ -51,5 +51,3 @@ function animateHeroElements() {
 
 cookiesBtnAccept.addEventListener('click', () => cookiesChoice('accepted'));
 cookiesBtnDecline.addEventListener('click', () => cookiesChoice('declined'));
-
-document.addEventListener('click', stopHeroAnimation);
