@@ -10,10 +10,10 @@
 }
 .sec-bg {
     position: absolute;
-    top: -378px;
-    left: -34px;
-    right: 0;
-    bottom: 0;
+    top: -372px;
+    left: 16px;
+    right: 17px;
+    bottom: 141px;
     background-size: cover;
     background-image: url(/img/reviews/mobbg.png);
     background-repeat: no-repeat;
@@ -136,8 +136,10 @@
 
 @media screen and (min-width: 1200px) {
     .sec-bg {
-        top: -1000px;
-        left: 0;
+        top: -1036px;
+        left: 40px;
+        bottom: -30px;
+        right: 40px;
         background-image: url(/img/reviews/desktbg.png);
     }
     .reviews-items {

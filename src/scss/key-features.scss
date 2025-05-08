@@ -2,6 +2,12 @@
     padding: 40px 0;
 }
 
+.features-section {
+    background: url(../images/mobile/key-features/imageBurstBg.jpg) -13px -11px /
+            335px 143px no-repeat,
+        #ffc966;
+    overflow: visible;
+}
 .features-cards {
     border-radius: 16px;
     display: flex;
@@ -226,10 +232,13 @@
 @media screen and (min-width: 1200px) {
     .features-section {
         padding: 80px 0;
-        background: url(/images/mobile/key-features/imageBurstBg.jpg) 230px -40px/1116px
-                no-repeat,
+        background: url(/images/mobile/key-features/imageBurstBg.jpg) -29px -47px /
+                1198px no-repeat,
             #ffc966;
         overflow: visible;
+    }
+    .section-title {
+        margin-bottom: 41px;
     }
 
     .feature-item {
