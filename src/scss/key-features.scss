@@ -2,12 +2,6 @@
     padding: 40px 0;
 }
 
-.features-section {
-    background: url(../images/mobile/key-features/imageBurstBg.jpg) -13px -11px /
-            335px 143px no-repeat,
-        #ffc966;
-    overflow: visible;
-}
 .features-cards {
     border-radius: 16px;
     display: flex;
@@ -19,11 +13,11 @@
     padding-bottom: 20px; /* відступ вниз між елементами */
     background: #ffeb9b;
     border-radius: 16px;
-    margin-bottom: 41px;
+    margin-bottom: 32px;
 }
 
 .weapon-card {
-    max-width: 288px;
+    // max-width: 288px;
     background-color: #5c3e3e;
     border-radius: 16px;
     display: flex;
@@ -44,7 +38,7 @@
 }
 
 .maskWeapon-card {
-    max-width: 288px;
+    // max-width: 288px;
     background-color: #5c3e3e;
     border-radius: 16px;
     display: flex;
@@ -74,7 +68,7 @@
     border-radius: 16px;
     border: 1px solid var(--dark-stroke, #393939);
     background: var(--orange-200, #ffb95a);
-    margin: 0 24px;
+    margin: 0 32px;
     margin-bottom: 8px;
     overflow: visible;
 }
@@ -86,9 +80,7 @@
     font-size: 20px;
     line-height: 100%;
     letter-spacing: -1.68px;
-    text-transform: uppercase;
     overflow: visible;
-    // margin-bottom: 8px;
 }
 
 .text-weapon {
@@ -121,7 +113,7 @@
 }
 
 .nitro-card {
-    max-width: 288px;
+    // max-width: 288px;
     border-radius: 16px;
     display: flex;
     flex-direction: column;
@@ -133,7 +125,7 @@
 }
 
 .wrapper-nitro {
-    width: 288px;
+    width: 300px;
     border: 1px solid black;
     border-radius: 16px;
     display: flex;
@@ -159,12 +151,11 @@
 }
 
 .yard-icon {
-    max-width: 306px;
+    min-width: 318px;
     margin-left: -15px;
 }
 
 .mask-card {
-    max-width: 288px;
     border-radius: 16px;
     display: flex;
     flex-direction: column;
@@ -180,7 +171,7 @@
 }
 
 .wrapper-mask {
-    width: 288px;
+    width: 300px;
     border: 1px solid black;
     border-radius: 16px;
     display: flex;
@@ -200,7 +191,6 @@
 }
 
 .nitrocar-card {
-    // max-width: 288px;
     border-radius: 16px;
     display: flex;
     flex-direction: column;
@@ -210,7 +200,7 @@
 }
 
 .nitrocar-icon {
-    width: 288px;
+    width: 300px;
 }
 
 .car-card {
@@ -230,13 +220,6 @@
 }
 
 @media screen and (min-width: 1200px) {
-    .features-section {
-        padding: 80px 0;
-        background: url(/images/mobile/key-features/imageBurstBg.jpg) -29px -47px /
-                1198px no-repeat,
-            #ffc966;
-        overflow: visible;
-    }
     .section-title {
         margin-bottom: 41px;
     }
@@ -293,9 +276,7 @@
         left: 12px;
         width: 72px;
         height: 72px;
-
-        background: url(/img/key-feature/arrowdecor.svg) no-repeat center;
-
+        background: url(../img/key-feature/arrowdecor.svg) no-repeat center;
         background-size: contain;
         z-index: 2;
     }
@@ -446,7 +427,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 352px;
+        // width: 352px;
         height: 342px;
         position: relative;
         left: 73px;
@@ -471,7 +452,7 @@
         content: '';
         position: absolute;
         top: -7px;
-        left: 125px;
+        left: 95px;
         width: 277px;
         height: 355px;
         background: url(/img/key-feature/nitroNate.png) no-repeat center;
@@ -479,7 +460,7 @@
         z-index: 1;
     }
     .wrapper-mask {
-        width: 352px;
+        // width: 352px;
         height: 342px;
     }
     .mask-card {
@@ -556,7 +537,10 @@
     .car-card,
     .nitrocar-icon,
     .wrapper-nitro,
-    .nitro-icon {
+    .nitro-icon,
+    .maskWeapon-card,
+    .maskWeapon-icon,
+    .wrapper-decor {
         display: none;
     }
 }
